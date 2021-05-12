@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 		50971F00264BFB32000223C0 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF8264BFB32000223C0 /* Dashboard.swift */; };
 		50971F02264BFB32000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFA264BFB32000223C0 /* ContentView.swift */; };
 		50971F03264BFB32000223C0 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFB264BFB32000223C0 /* Information.swift */; };
+		50971F06264C013A000223C0 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 50971F05264C013A000223C0 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50971F06264C013A000223C0 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +372,9 @@
 				50971E97264BFA88000223C0 /* PBXTargetDependency */,
 			);
 			name = CryptoHunter;
+			packageProductDependencies = (
+				50971F05264C013A000223C0 /* SwiftUICharts */,
+			);
 			productName = CryptoHunter;
 			productReference = 50971E6F264BFA86000223C0 /* CryptoHunter.app */;
 			productType = "com.apple.product-type.application";
@@ -525,6 +530,9 @@
 				Base,
 			);
 			mainGroup = 50971E66264BFA86000223C0;
+			packageReferences = (
+				50971F04264C013A000223C0 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 50971E70264BFA86000223C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1185,6 +1193,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50971F04264C013A000223C0 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50971F05264C013A000223C0 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50971F04264C013A000223C0 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50971E67264BFA86000223C0 /* Project object */;
 }

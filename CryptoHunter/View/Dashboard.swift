@@ -4,8 +4,10 @@
 //
 //  Created by Albert on 11/05/21.
 //
+// Charts Resources: https://github.com/AppPear/ChartView
 
 import SwiftUI
+import SwiftUICharts
 
 struct Dashboard: View {
     var body: some View {
