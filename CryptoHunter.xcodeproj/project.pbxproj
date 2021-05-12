@@ -1,0 +1,1190 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E72264BFA86000223C0 /* CryptoHunterApp.swift */; };
+		50971E77264BFA88000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E76264BFA88000223C0 /* Assets.xcassets */; };
+		50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E79264BFA88000223C0 /* Preview Assets.xcassets */; };
+		50971E85264BFA88000223C0 /* CryptoHunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E84264BFA88000223C0 /* CryptoHunterTests.swift */; };
+		50971E90264BFA88000223C0 /* CryptoHunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E8F264BFA88000223C0 /* CryptoHunterUITests.swift */; };
+		50971E95264BFA88000223C0 /* CryptoHunter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50971E94264BFA88000223C0 /* CryptoHunter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50971E9A264BFA89000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E99264BFA89000223C0 /* Assets.xcassets */; };
+		50971EA1264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50971EA6264BFA89000223C0 /* CryptoHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EA5264BFA89000223C0 /* CryptoHunterApp.swift */; };
+		50971EA8264BFA89000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EA7264BFA89000223C0 /* ContentView.swift */; };
+		50971EAA264BFA89000223C0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EA9264BFA89000223C0 /* NotificationController.swift */; };
+		50971EAC264BFA89000223C0 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EAB264BFA89000223C0 /* NotificationView.swift */; };
+		50971EAE264BFA89000223C0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EAD264BFA89000223C0 /* ComplicationController.swift */; };
+		50971EB0264BFA8A000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971EAF264BFA8A000223C0 /* Assets.xcassets */; };
+		50971EB3264BFA8A000223C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971EB2264BFA8A000223C0 /* Preview Assets.xcassets */; };
+		50971EBF264BFA8A000223C0 /* CryptoHunter_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EBE264BFA8A000223C0 /* CryptoHunter_WatchKit_AppTests.swift */; };
+		50971ECA264BFA8A000223C0 /* CryptoHunter_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EC9264BFA8A000223C0 /* CryptoHunter_WatchKit_AppUITests.swift */; };
+		50971EFC264BFB32000223C0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF0264BFB31000223C0 /* Currency.swift */; };
+		50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF2264BFB31000223C0 /* AppFonts.swift */; };
+		50971EFE264BFB32000223C0 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF4264BFB32000223C0 /* CurrencyService.swift */; };
+		50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF6264BFB32000223C0 /* DashboardViewModel.swift */; };
+		50971F00264BFB32000223C0 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF8264BFB32000223C0 /* Dashboard.swift */; };
+		50971F02264BFB32000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFA264BFB32000223C0 /* ContentView.swift */; };
+		50971F03264BFB32000223C0 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFB264BFB32000223C0 /* Information.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50971E81264BFA88000223C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50971E67264BFA86000223C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50971E6E264BFA86000223C0;
+			remoteInfo = CryptoHunter;
+		};
+		50971E8C264BFA88000223C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50971E67264BFA86000223C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50971E6E264BFA86000223C0;
+			remoteInfo = CryptoHunter;
+		};
+		50971E96264BFA88000223C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50971E67264BFA86000223C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50971E93264BFA88000223C0;
+			remoteInfo = "CryptoHunter WatchKit App";
+		};
+		50971EA2264BFA89000223C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50971E67264BFA86000223C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50971E9F264BFA89000223C0;
+			remoteInfo = "CryptoHunter WatchKit Extension";
+		};
+		50971EBB264BFA8A000223C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50971E67264BFA86000223C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50971E9F264BFA89000223C0;
+			remoteInfo = "CryptoHunter WatchKit Extension";
+		};
+		50971EC6264BFA8A000223C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50971E67264BFA86000223C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50971E93264BFA88000223C0;
+			remoteInfo = "CryptoHunter WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50971ED1264BFA8A000223C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50971EA1264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971ED5264BFA8A000223C0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				50971E95264BFA88000223C0 /* CryptoHunter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50971E6F264BFA86000223C0 /* CryptoHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50971E72264BFA86000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
+		50971E76264BFA88000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50971E79264BFA88000223C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50971E7B264BFA88000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50971E80264BFA88000223C0 /* CryptoHunterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoHunterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50971E84264BFA88000223C0 /* CryptoHunterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterTests.swift; sourceTree = "<group>"; };
+		50971E86264BFA88000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50971E8B264BFA88000223C0 /* CryptoHunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoHunterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50971E8F264BFA88000223C0 /* CryptoHunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterUITests.swift; sourceTree = "<group>"; };
+		50971E91264BFA88000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50971E94264BFA88000223C0 /* CryptoHunter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoHunter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50971E99264BFA89000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50971E9B264BFA89000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CryptoHunter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50971EA5264BFA89000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
+		50971EA7264BFA89000223C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50971EA9264BFA89000223C0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		50971EAB264BFA89000223C0 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		50971EAD264BFA89000223C0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		50971EAF264BFA8A000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50971EB2264BFA8A000223C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50971EB4264BFA8A000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50971EB5264BFA8A000223C0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		50971EBA264BFA8A000223C0 /* CryptoHunter WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoHunter WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50971EBE264BFA8A000223C0 /* CryptoHunter_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunter_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		50971EC0264BFA8A000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50971EC5264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoHunter WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50971EC9264BFA8A000223C0 /* CryptoHunter_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunter_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		50971ECB264BFA8A000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50971EF0264BFB31000223C0 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		50971EF2264BFB31000223C0 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		50971EF4264BFB32000223C0 /* CurrencyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		50971EF6264BFB32000223C0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		50971EF8264BFB32000223C0 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		50971EFA264BFB32000223C0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50971EFB264BFB32000223C0 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50971E6C264BFA86000223C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E7D264BFA88000223C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E88264BFA88000223C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E9D264BFA89000223C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971EB7264BFA8A000223C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971EC2264BFA8A000223C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50971E66264BFA86000223C0 = {
+			isa = PBXGroup;
+			children = (
+				50971E71264BFA86000223C0 /* CryptoHunter */,
+				50971E83264BFA88000223C0 /* CryptoHunterTests */,
+				50971E8E264BFA88000223C0 /* CryptoHunterUITests */,
+				50971E98264BFA88000223C0 /* CryptoHunter WatchKit App */,
+				50971EA4264BFA89000223C0 /* CryptoHunter WatchKit Extension */,
+				50971EBD264BFA8A000223C0 /* CryptoHunter WatchKit AppTests */,
+				50971EC8264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests */,
+				50971E70264BFA86000223C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50971E70264BFA86000223C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50971E6F264BFA86000223C0 /* CryptoHunter.app */,
+				50971E80264BFA88000223C0 /* CryptoHunterTests.xctest */,
+				50971E8B264BFA88000223C0 /* CryptoHunterUITests.xctest */,
+				50971E94264BFA88000223C0 /* CryptoHunter WatchKit App.app */,
+				50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */,
+				50971EBA264BFA8A000223C0 /* CryptoHunter WatchKit AppTests.xctest */,
+				50971EC5264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50971E71264BFA86000223C0 /* CryptoHunter */ = {
+			isa = PBXGroup;
+			children = (
+				50971EF1264BFB31000223C0 /* Extension */,
+				50971EF3264BFB32000223C0 /* Service */,
+				50971EEF264BFB31000223C0 /* Model */,
+				50971EF7264BFB32000223C0 /* View */,
+				50971EF5264BFB32000223C0 /* ViewModel */,
+				50971E76264BFA88000223C0 /* Assets.xcassets */,
+				50971E7B264BFA88000223C0 /* Info.plist */,
+				50971E78264BFA88000223C0 /* Preview Content */,
+			);
+			path = CryptoHunter;
+			sourceTree = "<group>";
+		};
+		50971E78264BFA88000223C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50971E79264BFA88000223C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50971E83264BFA88000223C0 /* CryptoHunterTests */ = {
+			isa = PBXGroup;
+			children = (
+				50971E84264BFA88000223C0 /* CryptoHunterTests.swift */,
+				50971E86264BFA88000223C0 /* Info.plist */,
+			);
+			path = CryptoHunterTests;
+			sourceTree = "<group>";
+		};
+		50971E8E264BFA88000223C0 /* CryptoHunterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50971E8F264BFA88000223C0 /* CryptoHunterUITests.swift */,
+				50971E91264BFA88000223C0 /* Info.plist */,
+			);
+			path = CryptoHunterUITests;
+			sourceTree = "<group>";
+		};
+		50971E98264BFA88000223C0 /* CryptoHunter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				50971E99264BFA89000223C0 /* Assets.xcassets */,
+				50971E9B264BFA89000223C0 /* Info.plist */,
+			);
+			path = "CryptoHunter WatchKit App";
+			sourceTree = "<group>";
+		};
+		50971EA4264BFA89000223C0 /* CryptoHunter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50971EA5264BFA89000223C0 /* CryptoHunterApp.swift */,
+				50971EA7264BFA89000223C0 /* ContentView.swift */,
+				50971EA9264BFA89000223C0 /* NotificationController.swift */,
+				50971EAB264BFA89000223C0 /* NotificationView.swift */,
+				50971EAD264BFA89000223C0 /* ComplicationController.swift */,
+				50971EAF264BFA8A000223C0 /* Assets.xcassets */,
+				50971EB4264BFA8A000223C0 /* Info.plist */,
+				50971EB5264BFA8A000223C0 /* PushNotificationPayload.apns */,
+				50971EB1264BFA8A000223C0 /* Preview Content */,
+			);
+			path = "CryptoHunter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		50971EB1264BFA8A000223C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50971EB2264BFA8A000223C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50971EBD264BFA8A000223C0 /* CryptoHunter WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				50971EBE264BFA8A000223C0 /* CryptoHunter_WatchKit_AppTests.swift */,
+				50971EC0264BFA8A000223C0 /* Info.plist */,
+			);
+			path = "CryptoHunter WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		50971EC8264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50971EC9264BFA8A000223C0 /* CryptoHunter_WatchKit_AppUITests.swift */,
+				50971ECB264BFA8A000223C0 /* Info.plist */,
+			);
+			path = "CryptoHunter WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		50971EEF264BFB31000223C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50971EF0264BFB31000223C0 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50971EF1264BFB31000223C0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50971EF2264BFB31000223C0 /* AppFonts.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		50971EF3264BFB32000223C0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				50971EF4264BFB32000223C0 /* CurrencyService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		50971EF5264BFB32000223C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				50971EF6264BFB32000223C0 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		50971EF7264BFB32000223C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50971E72264BFA86000223C0 /* CryptoHunterApp.swift */,
+				50971EFA264BFB32000223C0 /* ContentView.swift */,
+				50971EF8264BFB32000223C0 /* Dashboard.swift */,
+				50971EFB264BFB32000223C0 /* Information.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50971E6E264BFA86000223C0 /* CryptoHunter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50971ED6264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter" */;
+			buildPhases = (
+				50971E6B264BFA86000223C0 /* Sources */,
+				50971E6C264BFA86000223C0 /* Frameworks */,
+				50971E6D264BFA86000223C0 /* Resources */,
+				50971ED5264BFA8A000223C0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50971E97264BFA88000223C0 /* PBXTargetDependency */,
+			);
+			name = CryptoHunter;
+			productName = CryptoHunter;
+			productReference = 50971E6F264BFA86000223C0 /* CryptoHunter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50971E7F264BFA88000223C0 /* CryptoHunterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50971ED9264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunterTests" */;
+			buildPhases = (
+				50971E7C264BFA88000223C0 /* Sources */,
+				50971E7D264BFA88000223C0 /* Frameworks */,
+				50971E7E264BFA88000223C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50971E82264BFA88000223C0 /* PBXTargetDependency */,
+			);
+			name = CryptoHunterTests;
+			productName = CryptoHunterTests;
+			productReference = 50971E80264BFA88000223C0 /* CryptoHunterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50971E8A264BFA88000223C0 /* CryptoHunterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50971EDC264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunterUITests" */;
+			buildPhases = (
+				50971E87264BFA88000223C0 /* Sources */,
+				50971E88264BFA88000223C0 /* Frameworks */,
+				50971E89264BFA88000223C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50971E8D264BFA88000223C0 /* PBXTargetDependency */,
+			);
+			name = CryptoHunterUITests;
+			productName = CryptoHunterUITests;
+			productReference = 50971E8B264BFA88000223C0 /* CryptoHunterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		50971E93264BFA88000223C0 /* CryptoHunter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50971ED2264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit App" */;
+			buildPhases = (
+				50971E92264BFA88000223C0 /* Resources */,
+				50971ED1264BFA8A000223C0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50971EA3264BFA89000223C0 /* PBXTargetDependency */,
+			);
+			name = "CryptoHunter WatchKit App";
+			productName = "CryptoHunter WatchKit App";
+			productReference = 50971E94264BFA88000223C0 /* CryptoHunter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		50971E9F264BFA89000223C0 /* CryptoHunter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50971ECE264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit Extension" */;
+			buildPhases = (
+				50971E9C264BFA89000223C0 /* Sources */,
+				50971E9D264BFA89000223C0 /* Frameworks */,
+				50971E9E264BFA89000223C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CryptoHunter WatchKit Extension";
+			productName = "CryptoHunter WatchKit Extension";
+			productReference = 50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		50971EB9264BFA8A000223C0 /* CryptoHunter WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50971EDF264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit AppTests" */;
+			buildPhases = (
+				50971EB6264BFA8A000223C0 /* Sources */,
+				50971EB7264BFA8A000223C0 /* Frameworks */,
+				50971EB8264BFA8A000223C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50971EBC264BFA8A000223C0 /* PBXTargetDependency */,
+			);
+			name = "CryptoHunter WatchKit AppTests";
+			productName = "CryptoHunter WatchKit AppTests";
+			productReference = 50971EBA264BFA8A000223C0 /* CryptoHunter WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50971EC4264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50971EE2264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit AppUITests" */;
+			buildPhases = (
+				50971EC1264BFA8A000223C0 /* Sources */,
+				50971EC2264BFA8A000223C0 /* Frameworks */,
+				50971EC3264BFA8A000223C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50971EC7264BFA8A000223C0 /* PBXTargetDependency */,
+			);
+			name = "CryptoHunter WatchKit AppUITests";
+			productName = "CryptoHunter WatchKit AppUITests";
+			productReference = 50971EC5264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50971E67264BFA86000223C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					50971E6E264BFA86000223C0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					50971E7F264BFA88000223C0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 50971E6E264BFA86000223C0;
+					};
+					50971E8A264BFA88000223C0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 50971E6E264BFA86000223C0;
+					};
+					50971E93264BFA88000223C0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					50971E9F264BFA89000223C0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					50971EB9264BFA8A000223C0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 50971E9F264BFA89000223C0;
+					};
+					50971EC4264BFA8A000223C0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 50971E93264BFA88000223C0;
+					};
+				};
+			};
+			buildConfigurationList = 50971E6A264BFA86000223C0 /* Build configuration list for PBXProject "CryptoHunter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50971E66264BFA86000223C0;
+			productRefGroup = 50971E70264BFA86000223C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50971E6E264BFA86000223C0 /* CryptoHunter */,
+				50971E7F264BFA88000223C0 /* CryptoHunterTests */,
+				50971E8A264BFA88000223C0 /* CryptoHunterUITests */,
+				50971E93264BFA88000223C0 /* CryptoHunter WatchKit App */,
+				50971E9F264BFA89000223C0 /* CryptoHunter WatchKit Extension */,
+				50971EB9264BFA8A000223C0 /* CryptoHunter WatchKit AppTests */,
+				50971EC4264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50971E6D264BFA86000223C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */,
+				50971E77264BFA88000223C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E7E264BFA88000223C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E89264BFA88000223C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E92264BFA88000223C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971E9A264BFA89000223C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E9E264BFA89000223C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971EB3264BFA8A000223C0 /* Preview Assets.xcassets in Resources */,
+				50971EB0264BFA8A000223C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971EB8264BFA8A000223C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971EC3264BFA8A000223C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50971E6B264BFA86000223C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971EFE264BFB32000223C0 /* CurrencyService.swift in Sources */,
+				50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */,
+				50971EFC264BFB32000223C0 /* Currency.swift in Sources */,
+				50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */,
+				50971F02264BFB32000223C0 /* ContentView.swift in Sources */,
+				50971F00264BFB32000223C0 /* Dashboard.swift in Sources */,
+				50971F03264BFB32000223C0 /* Information.swift in Sources */,
+				50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E7C264BFA88000223C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971E85264BFA88000223C0 /* CryptoHunterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E87264BFA88000223C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971E90264BFA88000223C0 /* CryptoHunterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971E9C264BFA89000223C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971EAA264BFA89000223C0 /* NotificationController.swift in Sources */,
+				50971EA8264BFA89000223C0 /* ContentView.swift in Sources */,
+				50971EAE264BFA89000223C0 /* ComplicationController.swift in Sources */,
+				50971EA6264BFA89000223C0 /* CryptoHunterApp.swift in Sources */,
+				50971EAC264BFA89000223C0 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971EB6264BFA8A000223C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971EBF264BFA8A000223C0 /* CryptoHunter_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50971EC1264BFA8A000223C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50971ECA264BFA8A000223C0 /* CryptoHunter_WatchKit_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50971E82264BFA88000223C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50971E6E264BFA86000223C0 /* CryptoHunter */;
+			targetProxy = 50971E81264BFA88000223C0 /* PBXContainerItemProxy */;
+		};
+		50971E8D264BFA88000223C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50971E6E264BFA86000223C0 /* CryptoHunter */;
+			targetProxy = 50971E8C264BFA88000223C0 /* PBXContainerItemProxy */;
+		};
+		50971E97264BFA88000223C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50971E93264BFA88000223C0 /* CryptoHunter WatchKit App */;
+			targetProxy = 50971E96264BFA88000223C0 /* PBXContainerItemProxy */;
+		};
+		50971EA3264BFA89000223C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50971E9F264BFA89000223C0 /* CryptoHunter WatchKit Extension */;
+			targetProxy = 50971EA2264BFA89000223C0 /* PBXContainerItemProxy */;
+		};
+		50971EBC264BFA8A000223C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50971E9F264BFA89000223C0 /* CryptoHunter WatchKit Extension */;
+			targetProxy = 50971EBB264BFA8A000223C0 /* PBXContainerItemProxy */;
+		};
+		50971EC7264BFA8A000223C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50971E93264BFA88000223C0 /* CryptoHunter WatchKit App */;
+			targetProxy = 50971EC6264BFA8A000223C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50971ECC264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50971ECD264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		50971ECF264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CryptoHunter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		50971ED0264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CryptoHunter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		50971ED3264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = CryptoHunter_WatchKit_Extension;
+				INFOPLIST_FILE = "CryptoHunter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		50971ED4264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = CryptoHunter_WatchKit_Extension;
+				INFOPLIST_FILE = "CryptoHunter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		50971ED7264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CryptoHunter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50971ED8264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CryptoHunter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50971EDA264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CryptoHunterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoHunter.app/CryptoHunter";
+			};
+			name = Debug;
+		};
+		50971EDB264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CryptoHunterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoHunter.app/CryptoHunter";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50971EDD264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CryptoHunterUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoHunter;
+			};
+			name = Debug;
+		};
+		50971EDE264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CryptoHunterUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoHunter;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50971EE0264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoHunter WatchKit AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "academy.CryptoHunter-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoHunter WatchKit Extension.appex/CryptoHunter WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		50971EE1264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoHunter WatchKit AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "academy.CryptoHunter-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoHunter WatchKit Extension.appex/CryptoHunter WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		50971EE3264BFA8A000223C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoHunter WatchKit AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "academy.CryptoHunter-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "CryptoHunter WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		50971EE4264BFA8A000223C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoHunter WatchKit AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "academy.CryptoHunter-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "CryptoHunter WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50971E6A264BFA86000223C0 /* Build configuration list for PBXProject "CryptoHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971ECC264BFA8A000223C0 /* Debug */,
+				50971ECD264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50971ECE264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971ECF264BFA8A000223C0 /* Debug */,
+				50971ED0264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50971ED2264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971ED3264BFA8A000223C0 /* Debug */,
+				50971ED4264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50971ED6264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971ED7264BFA8A000223C0 /* Debug */,
+				50971ED8264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50971ED9264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971EDA264BFA8A000223C0 /* Debug */,
+				50971EDB264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50971EDC264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971EDD264BFA8A000223C0 /* Debug */,
+				50971EDE264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50971EDF264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971EE0264BFA8A000223C0 /* Debug */,
+				50971EE1264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50971EE2264BFA8A000223C0 /* Build configuration list for PBXNativeTarget "CryptoHunter WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50971EE3264BFA8A000223C0 /* Debug */,
+				50971EE4264BFA8A000223C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50971E67264BFA86000223C0 /* Project object */;
+}
