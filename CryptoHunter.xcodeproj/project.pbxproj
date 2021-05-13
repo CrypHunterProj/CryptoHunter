@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		507150ED264D4E00002E62AD /* DashboardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150EC264D4E00002E62AD /* DashboardHeader.swift */; };
+		507150EF264D6F6C002E62AD /* CurrencyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150EE264D6F6C002E62AD /* CurrencyDetail.swift */; };
+		507150F1264D6F8C002E62AD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F0264D6F8C002E62AD /* CurrencyCell.swift */; };
+		507150F3264D70D9002E62AD /* CurrencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F2264D70D9002E62AD /* CurrencyList.swift */; };
 		50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E72264BFA86000223C0 /* CryptoHunterApp.swift */; };
 		50971E77264BFA88000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E76264BFA88000223C0 /* Assets.xcassets */; };
 		50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E79264BFA88000223C0 /* Preview Assets.xcassets */; };
@@ -107,6 +110,9 @@
 
 /* Begin PBXFileReference section */
 		507150EC264D4E00002E62AD /* DashboardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardHeader.swift; sourceTree = "<group>"; };
+		507150EE264D6F6C002E62AD /* CurrencyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetail.swift; sourceTree = "<group>"; };
+		507150F0264D6F8C002E62AD /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		507150F2264D70D9002E62AD /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
 		50971E6F264BFA86000223C0 /* CryptoHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50971E72264BFA86000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
 		50971E76264BFA88000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +199,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		507150F4264D70EC002E62AD /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				50971EF8264BFB32000223C0 /* Dashboard.swift */,
+				507150EC264D4E00002E62AD /* DashboardHeader.swift */,
+				507150F0264D6F8C002E62AD /* CurrencyCell.swift */,
+				507150F2264D70D9002E62AD /* CurrencyList.swift */,
+				507150EE264D6F6C002E62AD /* CurrencyDetail.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		50971E66264BFA86000223C0 = {
 			isa = PBXGroup;
 			children = (
@@ -348,10 +366,9 @@
 		50971EF7264BFB32000223C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				507150F4264D70EC002E62AD /* Dashboard */,
 				50971E72264BFA86000223C0 /* CryptoHunterApp.swift */,
 				50971EFA264BFB32000223C0 /* ContentView.swift */,
-				50971EF8264BFB32000223C0 /* Dashboard.swift */,
-				507150EC264D4E00002E62AD /* DashboardHeader.swift */,
 				50971EFB264BFB32000223C0 /* Information.swift */,
 			);
 			path = View;
@@ -613,13 +630,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507150F3264D70D9002E62AD /* CurrencyList.swift in Sources */,
 				50971EFE264BFB32000223C0 /* CurrencyService.swift in Sources */,
 				50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */,
 				50971EFC264BFB32000223C0 /* Currency.swift in Sources */,
 				50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */,
 				50971F02264BFB32000223C0 /* ContentView.swift in Sources */,
 				50971F00264BFB32000223C0 /* Dashboard.swift in Sources */,
+				507150F1264D6F8C002E62AD /* CurrencyCell.swift in Sources */,
 				50971F03264BFB32000223C0 /* Information.swift in Sources */,
+				507150EF264D6F6C002E62AD /* CurrencyDetail.swift in Sources */,
 				50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */,
 				507150ED264D4E00002E62AD /* DashboardHeader.swift in Sources */,
 			);
