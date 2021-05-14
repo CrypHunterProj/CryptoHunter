@@ -10,6 +10,9 @@
 		18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A50264D7D2F00F967F2 /* InfoCardModel.swift */; };
 		18A33A53264D85BF00F967F2 /* InfoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A52264D85BF00F967F2 /* InfoDetail.swift */; };
 		18A33A55264D85F600F967F2 /* InfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A54264D85F600F967F2 /* InfoCardView.swift */; };
+		18BBF10A264EB6230053CD43 /* InformationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBF109264EB6230053CD43 /* InformationData.swift */; };
+		18BBF10C264EBB790053CD43 /* Informacoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 18BBF10B264EBB790053CD43 /* Informacoes.json */; };
+		18BBF10E264EBEA00053CD43 /* FetchInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBF10D264EBEA00053CD43 /* FetchInformation.swift */; };
 		50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E72264BFA86000223C0 /* CryptoHunterApp.swift */; };
 		50971E77264BFA88000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E76264BFA88000223C0 /* Assets.xcassets */; };
 		50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E79264BFA88000223C0 /* Preview Assets.xcassets */; };
@@ -111,6 +114,9 @@
 		18A33A50264D7D2F00F967F2 /* InfoCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardModel.swift; sourceTree = "<group>"; };
 		18A33A52264D85BF00F967F2 /* InfoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetail.swift; sourceTree = "<group>"; };
 		18A33A54264D85F600F967F2 /* InfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardView.swift; sourceTree = "<group>"; };
+		18BBF109264EB6230053CD43 /* InformationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationData.swift; sourceTree = "<group>"; };
+		18BBF10B264EBB790053CD43 /* Informacoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Informacoes.json; sourceTree = "<group>"; };
+		18BBF10D264EBEA00053CD43 /* FetchInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInformation.swift; sourceTree = "<group>"; };
 		50971E6F264BFA86000223C0 /* CryptoHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50971E72264BFA86000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
 		50971E76264BFA88000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,6 +214,14 @@
 			path = InformationView;
 			sourceTree = "<group>";
 		};
+		18BBF106264EB25B0053CD43 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18BBF10B264EBB790053CD43 /* Informacoes.json */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		50971E66264BFA86000223C0 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +253,7 @@
 		50971E71264BFA86000223C0 /* CryptoHunter */ = {
 			isa = PBXGroup;
 			children = (
+				18BBF106264EB25B0053CD43 /* Helpers */,
 				50971EF1264BFB31000223C0 /* Extension */,
 				50971EF3264BFB32000223C0 /* Service */,
 				50971EEF264BFB31000223C0 /* Model */,
@@ -348,6 +363,8 @@
 			isa = PBXGroup;
 			children = (
 				50971EF4264BFB32000223C0 /* CurrencyService.swift */,
+				18BBF109264EB6230053CD43 /* InformationData.swift */,
+				18BBF10D264EBEA00053CD43 /* FetchInformation.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -571,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */,
+				18BBF10C264EBB790053CD43 /* Informacoes.json in Resources */,
 				50971E77264BFA88000223C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,11 +649,13 @@
 				50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */,
 				18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */,
 				50971EFC264BFB32000223C0 /* Currency.swift in Sources */,
+				18BBF10A264EB6230053CD43 /* InformationData.swift in Sources */,
 				50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */,
 				50971F02264BFB32000223C0 /* ContentView.swift in Sources */,
 				18A33A55264D85F600F967F2 /* InfoCardView.swift in Sources */,
 				18A33A53264D85BF00F967F2 /* InfoDetail.swift in Sources */,
 				50971F00264BFB32000223C0 /* Dashboard.swift in Sources */,
+				18BBF10E264EBEA00053CD43 /* FetchInformation.swift in Sources */,
 				50971F03264BFB32000223C0 /* Information.swift in Sources */,
 				50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */,
 			);
