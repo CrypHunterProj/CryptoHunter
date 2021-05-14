@@ -29,7 +29,7 @@ struct Information: View {
             ScrollView {
                 ForEach(infoCards, id: \.self) { info in
                     NavigationLink(destination: InfoDetail(infoDetail: info)) {
-                        InfoCardView.init(model: info)
+                        InfoCardView(model: info)
                     }
                     .foregroundColor(.white)
                 }

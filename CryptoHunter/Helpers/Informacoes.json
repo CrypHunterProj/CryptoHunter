@@ -54,7 +54,7 @@
         "topic": "Transações",
         "content": [
             {
-                "header": "O que são Transações? 📈",
+                "header": "O que são Transações?",
                 "text": "As transações de bitcoins não ficam em contas bancárias e bancos tradicionais, Cada participante da rede Bitcoin possui uma carteira digital. Essa carteira digital cria um número de pares de chave pública/privada arbitrárias. Um processo de criptografia arbitrário da carteira é o responsável pela geração de endereços bitcoins. Vale a pena ressaltar que os proprietários das carteiras bitcoins são considerados anônimos, ou seja essas carteiras não têm nenhuma informação sobre seus proprietários. As senhas privadas que são as chaves privadas da carteira bitcoin são utilizadas para permitir pagamentos feitos exclusivamente pelo dono da moeda."
             },
             {
@@ -67,7 +67,7 @@
         "topic": "Cotações",
         "content": [
             {
-                "header": "O que são Cotações? 📊",
+                "header": "O que são Cotações?",
                 "text": "A cotação é o preço estabelecido para determinado item, seja uma mercadoria ou um ativo. No mercado de investimentos a cotação esta ligada aos ativos.\nA cotação de um ativo na bolsa varia à partir de movimentos culturais ou políticos e especulações. As decisões de um presidente ou um fenômeno que cause a baixa na compra de um produto são exemplos de fatores que fazem isso mudar.  Para entender o funcionamento da cotação, é possível visualizar os valores em aplicativos em sites.\n\nPara um mesmo ativo existem diversas informações, sendo o ÚLTIMO a mais acompanhada, pois representa o valor da negociação mais recente de um ativo. Por conta disso, a cotação de um mesmo ativo varia bastante ao longo do dia até ocorrer o fechamento do pregão do dia. A variação de um ativo então vai ser a ultima cotação com o pregão do dia anterior."
             },
             {
