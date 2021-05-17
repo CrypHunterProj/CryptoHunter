@@ -29,7 +29,7 @@ struct CurrencyCell: View {
                 VStack(alignment: .trailing) {
                     Text("R$\(currency.value)")
                     HStack {
-                        Image("upArrow")
+//                        Image("upArrow")
                         Text("\(currency.percentage)%")
                     }
                 }
