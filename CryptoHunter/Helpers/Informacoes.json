@@ -1,0 +1,79 @@
+[
+    {
+        "topic": "Criptomoedas",
+        "content": [
+            {
+                "header": "O que são criptomoedas?",
+                "text": "Criptomoedas são moedas digitais porque, diferentemente do real, do dólar e de outras moedas que podem ser tocadas, elas só existem na internet. Ou seja, você sabe que elas são verdadeiras, mas não consegue pegá-las com as mãos ou guardá-las na carteira convencional, no cofre, etc.\nUm dos pilares das criptomoedas é a criptografia: uma camada de segurança online que dificulta bastante qualquer tipo de fraude."
+            },
+
+            {
+                "header": "Por que as criptomoedas ficaram tão famosas?",
+                "text": "Nos últimos anos, as criptomoedas ganharam os noticiários do mundo todo principalmente por causa do bitcoin, a primeira moeda digital do mundo, e sua alta volatilidade. Mas como qualquer outra moeda, o bitcoin sofre variações diárias e segue a lei da oferta e da demanda: quanto mais pessoas querendo, mais caro fica – e vice-versa."
+
+            },
+
+            {
+                "header": "Quem decide o valor das criptomoedas?",
+                "text": "Assim como o mercado de ações, as criptomoedas também operam a partir da especulação. Se as pessoas sentem que o investimento não é seguro (porque uma corretora de criptomoedas foi roubada, por exemplo), muitas vendem suas moedas e o preço despenca. Se, por outro lado, o investimento parece atrativo, muita gente querendo comprar faz o preço aumentar."
+
+            },
+
+            {
+                "header": "Fonte",
+                "text": "Blog Nubank"
+            }
+        ]
+    },
+    {
+        "topic": "Blockchain",
+        "content": [
+            {
+                "header": "O que é Blockchain?",
+                "text": "É um sistema que permite o envio e o recebimento de alguns tipos de informação pela internet. É ele que garante que as transações feitas na rede do Bitcoin sejam seguras e impossíveis de se fraudar. Basicamente são pedaços de código gerados online que carregam informações conectadas, como blocos de dados que formam uma corrente – por isso o nome “corrente de blocos”."
+            },
+            {
+                "header": "Blockchain é a mesma coisa que bitcoin?",
+                "text": "Não. Blockchain é a tecnologia que possibilitou a criação do bitcoin e de outras criptomoedas, como Ether e Litecoin, mas ela pode ser usada para diversas outras aplicações, vem sendo estudada por especialistas a necessidade de transparência na gestão pública e transações financeiras entre governos utilizando as redes blockchain para garantir transparência dos dados. \nA blockchain também pode ser usada para validação de documentos como contratos e troca de ações,  comercialização de músicas ou filmes, rastreamento de remessas e até votos."
+            },
+            {
+                "header": "Como funciona a tecnologia blockchain?",
+                "text": "Blockchain é uma cadeia de blocos onde cada um contém um arquivo e um hash, o que garante que as informações desse bloco de dados não foram violadas.\nTodo bloco criado contém sua hash e a do bloco anterior, criando uma conexão entre os blocos. É dessa ligação que surge o nome blockchain.\nBasicamente, a blockchain funciona assim:\n\n1. Maria quer enviar um ativo digital (uma criptomoeda, um contrato ou um arquivo digital) para João;\n2. O ativo é representado online como um bloco onde os detalhes estão armazenados;\n3. O bloco é distribuído pela rede e cada máquina fica com uma cópia da transação em tempo real;\n4. A rede verifica se o ativo é válido em questão de minutos;\n5. Se aprovado, o bloco é adicionado a uma corrente de blocos e ganha um registro permanente na rede. Isso significa que ele não pode ser alterado;\n6. A propriedade do ativo, que era de Maria, agora fica registrada na rede como sendo de João.\n\nToda essa movimentação é validada pela rede, mas ninguém sabe quem está fazendo a transação. Essa informação é protegida por um código formado por letras e números muito difícil de ser descoberto."
+            },
+            {
+                "header": "Blockchain é seguro?",
+                "text": "As redes de blockchain não tem dono, ou seja, como a rede não está centralizada em nenhum lugar e possui diversas camadas de segurança, invadi-la é extremamente difícil, isso faz com que seja uma tecnologia segura.\nQuando o sistema reconhece que alguém está tentando invadi-lo, ele automaticamente trava em questão de segundos.\nSe você ouviu falar sobre bitcoins ou criptomoedas roubadas, é porque o crime ocorreu no equipamento do usuário ou na corretora contratada pelo internauta – não na blockchain."
+            },
+            {
+                "header": "Fonte",
+                "text": "Blog Nubank"
+            }
+        ]
+    },
+    {
+        "topic": "Transações",
+        "content": [
+            {
+                "header": "O que são Transações?",
+                "text": "As transações de bitcoins não ficam em contas bancárias e bancos tradicionais, Cada participante da rede Bitcoin possui uma carteira digital. Essa carteira digital cria um número de pares de chave pública/privada arbitrárias. Um processo de criptografia arbitrário da carteira é o responsável pela geração de endereços bitcoins. Vale a pena ressaltar que os proprietários das carteiras bitcoins são considerados anônimos, ou seja essas carteiras não têm nenhuma informação sobre seus proprietários. As senhas privadas que são as chaves privadas da carteira bitcoin são utilizadas para permitir pagamentos feitos exclusivamente pelo dono da moeda."
+            },
+            {
+                "header": "Fonte",
+                "text": "Wikipedia"
+            }
+        ]
+    },
+    {
+        "topic": "Cotações",
+        "content": [
+            {
+                "header": "O que são Cotações?",
+                "text": "A cotação é o preço estabelecido para determinado item, seja uma mercadoria ou um ativo. No mercado de investimentos a cotação esta ligada aos ativos.\nA cotação de um ativo na bolsa varia à partir de movimentos culturais ou políticos e especulações. As decisões de um presidente ou um fenômeno que cause a baixa na compra de um produto são exemplos de fatores que fazem isso mudar.  Para entender o funcionamento da cotação, é possível visualizar os valores em aplicativos em sites.\n\nPara um mesmo ativo existem diversas informações, sendo o ÚLTIMO a mais acompanhada, pois representa o valor da negociação mais recente de um ativo. Por conta disso, a cotação de um mesmo ativo varia bastante ao longo do dia até ocorrer o fechamento do pregão do dia. A variação de um ativo então vai ser a ultima cotação com o pregão do dia anterior."
+            },
+            {
+                "header": "Fonte",
+                "text": "Infomoney"
+            }
+        ]
+    }
+]
