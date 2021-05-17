@@ -20,7 +20,7 @@ struct CurrencyCell: View {
                 .padding(.vertical, 4)
 
             HStack {
-                Image("")
+//                Image("")
                 VStack(alignment: .leading) {
                     Text(currency.id)
                     Text(currency.name)

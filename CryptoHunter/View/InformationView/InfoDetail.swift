@@ -70,7 +70,6 @@ struct InfoDetail: View {
         .onAppear(perform: {
             let fetchInfo = FetchInformation()
             let informationDataArray = fetchInfo.parseJson(filename: "Informacoes")
-            print(informationDataArray)
 
             // filtrar o informationArray e pegar só o da Tela que vc entrou (Criptomoeads, Blockchain, ...)
             let informationData = informationDataArray.first(where: { informationData in
