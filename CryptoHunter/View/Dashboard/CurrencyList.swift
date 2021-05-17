@@ -26,6 +26,8 @@ struct CurrencyList: View {
                             .frame(height: 80)
                     }
                 }
+                .padding(.vertical, 24)
+                .background(RoundedRectangle(cornerRadius: 24).padding(.bottom, -300))
             }
         }
     }

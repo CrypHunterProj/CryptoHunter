@@ -21,7 +21,7 @@ struct DashboardHeader: View {
             LineChartView(data: [12,12,4,15],
                           title: "ADV",
                           form: ChartForm.small)
-        }
+        }.padding(.vertical, 16)
     }
 }
 

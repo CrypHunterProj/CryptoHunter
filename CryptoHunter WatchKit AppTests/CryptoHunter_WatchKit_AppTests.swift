@@ -8,6 +8,7 @@
 import XCTest
 @testable import CryptoHunter_WatchKit_Extension
 
+// swiftlint:disable type_name
 class CryptoHunter_WatchKit_AppTests: XCTestCase {
 
     override func setUpWithError() throws {

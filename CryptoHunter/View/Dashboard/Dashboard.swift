@@ -13,14 +13,12 @@ struct Dashboard: View {
         let viewModel = DashboardViewModel()
         NavigationView {
             VStack {
-                DashboardHeader()
-                    .zIndex(1)
+                DashboardHeader().zIndex(1)
+                Spacer(minLength: 16)
                 CurrencyList()
-                    .zIndex(0)
             }
-            .navigationBarTitle("Dashboard", displayMode: .large)
-            .navigationBarItems(trailing: Button("Edit") {}
-            )
+            .navigationBarTitle("Dashboard", displayMode: .automatic)
+            .navigationBarItems(trailing: Button("Edit") {})
         }
     }
 }
