@@ -70,7 +70,7 @@ struct InfoDetail: View {
         .onAppear(perform: {
             let fetchInfo = FetchInformation()
             let informationDataArray = fetchInfo.parseJson(filename: "Informacoes")
-            print(informationDataArray)
+//            print(informationDataArray)
 
             //filtrar o informationArray e pegar só o da Tela que vc entrou (Criptomoeads, Blockchain, ...)
             let informationData = informationDataArray.first(where: { informationData in
@@ -92,6 +92,6 @@ struct InfoDetail_Previews: PreviewProvider {
                 title: "Criptomoedas", image: "bitcoinsign.circle.fill"
             ))
         }
-            .previewDevice("iPhone 11")
+            .previewDevice("iPhone SE (2nd generation)")
     }
 }

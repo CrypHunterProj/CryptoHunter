@@ -40,6 +40,19 @@ struct Information: View {
                     print(information)
                 })
             */
+                //  DEBUG
+                    .onAppear(perform: {
+                        CurrentService.shared.getAllCryptoData {  result in
+                            switch result {
+                            case .success(let sortedCryptos):
+                                print("\n|-----------------------------------|")
+                                print("\nINFORMATION CRYPTOS\n")
+                                print(sortedCryptos.first)
+                            case .failure(let error):
+                                print(error)
+                            }
+                        }
+                    })
             }
 
             .navigationTitle("Informações")

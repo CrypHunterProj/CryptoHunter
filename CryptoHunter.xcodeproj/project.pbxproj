@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188385E126529F78003ACB1C /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188385E026529F78003ACB1C /* CryptoData.swift */; };
 		18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A50264D7D2F00F967F2 /* InfoCardModel.swift */; };
 		18A33A53264D85BF00F967F2 /* InfoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A52264D85BF00F967F2 /* InfoDetail.swift */; };
 		18A33A55264D85F600F967F2 /* InfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A54264D85F600F967F2 /* InfoCardView.swift */; };
@@ -115,6 +116,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		188385E026529F78003ACB1C /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 		18A33A50264D7D2F00F967F2 /* InfoCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardModel.swift; sourceTree = "<group>"; };
 		18A33A52264D85BF00F967F2 /* InfoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetail.swift; sourceTree = "<group>"; };
 		18A33A54264D85F600F967F2 /* InfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardView.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				50971EF4264BFB32000223C0 /* CurrencyService.swift */,
+				188385E026529F78003ACB1C /* CryptoData.swift */,
 				18BBF109264EB6230053CD43 /* InformationData.swift */,
 				18BBF10D264EBEA00053CD43 /* FetchInformation.swift */,
 			);
@@ -669,6 +672,7 @@
 				50971EFE264BFB32000223C0 /* CurrencyService.swift in Sources */,
 				18BBF110264F16760053CD43 /* Information.swift in Sources */,
 				50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */,
+				188385E126529F78003ACB1C /* CryptoData.swift in Sources */,
 				18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */,
 				50971EFC264BFB32000223C0 /* Currency.swift in Sources */,
 				18BBF10A264EB6230053CD43 /* InformationData.swift in Sources */,
