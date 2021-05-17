@@ -19,7 +19,7 @@ struct CurrencyList: View {
 
     var body: some View {
         ZStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 ForEach(items, id: \.self) { item in
                     NavigationLink(destination: CurrencyDetail(currency: item)) {
                         CurrencyCell(currency: item)
@@ -27,7 +27,11 @@ struct CurrencyList: View {
                     }
                 }
                 .padding(.vertical, 24)
-                .background(RoundedRectangle(cornerRadius: 24).padding(.bottom, -300))
+                .background(RoundedRectangle(cornerRadius: 24)
+                                .fill(LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 10/255, green: 40/255, blue: 64/255, opacity: 1), Color.black]),
+                                                     startPoint: .topLeading,
+                                                     endPoint: .bottomTrailing))
+                                .padding(.bottom, -300))
             }
         }
     }
