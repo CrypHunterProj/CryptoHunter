@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Currency: Codable, Hashable {
+    let id: String
+    let name: String
+    let value: Double
+    let image: String
+    let percentage: Int
+}
