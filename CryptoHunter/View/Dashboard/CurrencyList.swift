@@ -15,17 +15,23 @@ struct CurrencyList: View {
                  Currency(id: "BTC", name: "Bitcoin", value: 2000.00, image: "", percentage: 14),
                  Currency(id: "ETH", name: "Etherium", value: 2400.00, image: "", percentage: 23),
                  Currency(id: "BTC", name: "Bitcoin", value: 2000.00, image: "", percentage: 14),
-                 Currency(id: "ETH", name: "Etherium", value: 2400.00, image: "", percentage: 23),]
-    
+                 Currency(id: "ETH", name: "Etherium", value: 2400.00, image: "", percentage: 23) ]
+
     var body: some View {
         ZStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 ForEach(items, id: \.self) { item in
                     NavigationLink(destination: CurrencyDetail(currency: item)) {
                         CurrencyCell(currency: item)
                             .frame(height: 80)
                     }
                 }
+                .padding(.vertical, 24)
+                .background(RoundedRectangle(cornerRadius: 24)
+                                .fill(LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 10/255, green: 40/255, blue: 64/255, opacity: 1), Color.black]),
+                                                     startPoint: .topLeading,
+                                                     endPoint: .bottomTrailing))
+                                .padding(.bottom, -300))
             }
         }
     }

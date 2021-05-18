@@ -10,7 +10,7 @@ import SwiftUI
 struct InfoDetail: View {
     var infoDetail: InfoCardModel
 
-    @State private var information: InformationData?
+    @State private var information: Information?
 
     @State private var imageRotateAnimation: Bool = false
 
@@ -36,10 +36,10 @@ struct InfoDetail: View {
     fileprivate func textContent() -> some View {
         return
             VStack(alignment: .leading, spacing: 10) {
-                //usar information nas views
-                ForEach(information?.content ?? [], id: \.header)  { content in
+                // usar information nas views
+                ForEach(information?.content ?? [], id: \.header) { content in
 
-                    if (content.header == "Fonte") {
+                    if content.header == "Fonte" {
                         Text("Fonte: \(content.text)").padding()
                     } else {
                         Text(content.header)
@@ -68,16 +68,15 @@ struct InfoDetail: View {
         }
         .navigationTitle(Text(infoDetail.title))
         .onAppear(perform: {
-            let fetchInfo = FetchInformation()
+            let fetchInfo = InformationService()
             let informationDataArray = fetchInfo.parseJson(filename: "Informacoes")
-//            print(informationDataArray)
 
-            //filtrar o informationArray e pegar só o da Tela que vc entrou (Criptomoeads, Blockchain, ...)
+            // filtrar o informationArray e pegar só o da Tela que vc entrou (Criptomoeads, Blockchain, ...)
             let informationData = informationDataArray.first(where: { informationData in
                 return informationData.topic == infoDetail.title
             })
 
-            //atribuir o InformationData especifico a variavel information
+            // atribuir o InformationData especifico a variavel information
             self.information = informationData
 
             imageRotateAnimation = true

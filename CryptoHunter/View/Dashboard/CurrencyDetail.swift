@@ -9,11 +9,11 @@ import SwiftUI
 
 struct CurrencyDetail: View {
     var currency: Currency
-    
+
     var body: some View {
         NavigationView {
             List {
-                
+
             }
         }.navigationBarTitle(Text(currency.name), displayMode: .large)
     }

@@ -10,26 +10,22 @@ import SwiftUI
 
 struct Dashboard: View {
     var body: some View {
-        let viewModel = DashboardViewModel()
         NavigationView {
             VStack {
-                DashboardHeader()
-                    .zIndex(1)
+                DashboardHeader().zIndex(1)
+                Spacer(minLength: 32)
                 CurrencyList()
-                    .zIndex(0)
             }
-            .navigationBarTitle("Dashboard", displayMode: .large)
-            .navigationBarItems(trailing: Button("Edit") {}
-            )
+            .navigationBarTitle("Dashboard", displayMode: .automatic)
+            .navigationBarItems(trailing: Button("Edit") {})
         }
     }
 }
 
-
-
 struct Dashboard_Previews: PreviewProvider {
     static var previews: some View {
         Dashboard()
+            .preferredColorScheme(.dark)
             .previewDevice("iPhone 11")
     }
 }

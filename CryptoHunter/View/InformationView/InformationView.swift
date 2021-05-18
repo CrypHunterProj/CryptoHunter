@@ -1,5 +1,5 @@
 //
-//  Information.swift
+//  InformationView.swift
 //  CrypHunter (iOS)
 //
 //  Created by Albert on 11/05/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Information: View {
+struct InformationView: View {
 
     let infoCards = [
         InfoCardModel(

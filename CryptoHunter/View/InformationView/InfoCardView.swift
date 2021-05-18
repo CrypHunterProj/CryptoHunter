@@ -28,9 +28,8 @@ struct InfoCardView: View {
     }
 }
 
-
 struct Information_Previews: PreviewProvider {
     static var previews: some View {
-        Information()
+        InformationView()
     }
 }

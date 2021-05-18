@@ -21,12 +21,12 @@ struct CoinMarketCapRouter {
         string: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=100&convert=BRL"
     )!
 
-    private static var header: [String : String] {
+    private static var header: [String: String] {
         switch self {
         default:
             return [
                 "Accepts": "application/json",
-                "X-CMC_PRO_API_KEY": "89fe9de0-0581-4265-812e-84c7e2b2f59a",
+                "X-CMC_PRO_API_KEY": "89fe9de0-0581-4265-812e-84c7e2b2f59a"
             ]
         }
     }
@@ -74,9 +74,9 @@ struct CurrencyService {
     }
 
     private static func request(session: URLSession = URLSession.shared,
-                                completion: @escaping (Result<[CryptoCoin],Error>) -> Void) {
+                                completion: @escaping (Result<[CryptoCoin], Error>) -> Void) {
 
-        let task = session.dataTask(with: CoinMarketCapRouter.urlRequest) { data, response, error in
+        let task = session.dataTask(with: CoinMarketCapRouter.urlRequest) { data, _, error in
             guard let data = data, error == nil else {
                 completion(.failure(CurrencyServiceError.dataIsNil))
                 return
@@ -86,14 +86,12 @@ struct CurrencyService {
                 let cryptoData = try JSONDecoder().decode(CryptoData.self, from: data)
                 completion(.success(cryptoData.data))
                 try persistListingsCurrency(data: data)
-            }
-            catch {
+            } catch {
                 completion(.failure(CurrencyServiceError.decodeError(errorDescription: "\(error)")))
             }
         }
         task.resume()
     }
-
 
     /// Salva no dispositivo o `data` do `CryptoData` para o dia atual. Usada dentro da função `request`.
     /// - Parameter data: Data do json que foi retornado na requisicao.
@@ -106,7 +104,6 @@ struct CurrencyService {
         //Persistindo data no caminho
         try data.write(to: fileURL)
     }
-
 
     /// Função que retorna o titulo padronizado pra que o nome do arquivo persistido seja unico por dia e identifique o dia atual. Dessa forma, todos os dias, o titulo do arquivo do dia atual é diferente do dia anterior.
     /// - Returns: Titulo do arquivo para o dia atual diferente do dia anterior.

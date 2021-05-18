@@ -9,19 +9,21 @@ import SwiftUI
 
 struct CurrencyCell: View {
     var currency: Currency
+
     var body: some View {
-        
         ZStack {
-            
-            RoundedRectangle(cornerRadius: 10)
-                .fill(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.black]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color(.sRGB, red: 4/255, green: 20/255, blue: 25/255, opacity: 1))
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal, 24)
                 .padding(.vertical, 4)
-                .shadow(color: Color.black, radius: 3, x: 3, y: 3)
-            
+
             HStack {
-                Image("")
+                AsyncImage(url: URL(string: "https://cryptoicons.org/api/white/eth/200")!,
+                           placeholder: { ProgressView() },
+                           image: { Image(uiImage: $0).resizable() })
+                        .frame(width: 36, height: 36)
+                        .padding(.trailing, 8)
                 VStack(alignment: .leading) {
                     Text(currency.id)
                     Text(currency.name)
@@ -29,7 +31,10 @@ struct CurrencyCell: View {
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text("R$\(currency.value)")
-                    Text("\(currency.percentage)%")
+                    HStack {
+//                        Image("upArrow")
+                        Text("\(currency.percentage)%")
+                    }
                 }
             }
             .font(.body)
@@ -42,5 +47,6 @@ struct CurrencyCell: View {
 struct CurrencyCell_Previews: PreviewProvider {
     static var previews: some View {
         CurrencyCell(currency: Currency(id: "", name: "", value: 2000, image: "", percentage: 0))
+            .previewLayout(.fixed(width: 400, height: 80))
     }
 }
