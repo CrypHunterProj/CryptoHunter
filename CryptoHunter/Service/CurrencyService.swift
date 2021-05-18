@@ -1,46 +1,54 @@
 //
-//  CurrencyService.swift
-//  CrypHunter (iOS)
+//  CurrentService.swift
+//  CryptoHunter
 //
-//  Created by Albert on 11/05/21.
+//  Created by Alley Pereira on 18/05/21.
 //
 
 import Foundation
 
-final class CurrentService {
+struct CoinMarketCapRouter {
 
-    static let shared = CurrentService()
+    private init() { }
 
-    private struct Constants {
-        static let apiKey = "B34BA97B-E5E2-4C0E-9194-2DB4D110EEFB"
-        static let endpoint = "https://rest.coinapi.io/v1/assets/?apikey=\(apiKey)"
-        static let assetEndpoint = ""
+    static var urlRequest: URLRequest {
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = header
+        return request
     }
 
-    private init () {}
+    private static let url: URL = URL(
+        string: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=100&convert=BRL"
+    )!
 
-
-    // MARK: - Public
-    public func getAllCryptoData(completion: @escaping (Result<[CryptoData], Error>) -> Void) {
-
-        guard let url = URL(string: Constants.endpoint) else {
-            return
+    private static var header: [String : String] {
+        switch self {
+        default:
+            return [
+                "Accepts": "application/json",
+                "X-CMC_PRO_API_KEY": "89fe9de0-0581-4265-812e-84c7e2b2f59a",
+            ]
         }
+    }
+}
 
-        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+struct CurrencyService {
+
+    static func request(session: URLSession = URLSession.shared,
+                        completion: @escaping (Result<[CryptoCoin],Error>) -> Void) {
+
+        let task = session.dataTask(with: CoinMarketCapRouter.urlRequest) { data, response, error in
             guard let data = data, error == nil else {
+                completion(.failure(CurrencyServiceError.dataIsNil))
                 return
             }
 
             do {
-                let cryptos = try JSONDecoder().decode([CryptoData].self, from: data)
-                let sortedCryptos = cryptos.sorted { first, second -> Bool in
-                    return first.price_usd ?? 0 > second.price_usd ?? 0
-                }
-                completion(.success(sortedCryptos))
+                let cryptoData = try JSONDecoder().decode(CryptoData.self, from: data)
+                completion(.success(cryptoData.data))
             }
             catch {
-                completion(.failure(error))
+                completion(.failure(CurrencyServiceError.decodeError(errorDescription: "\(error)")))
             }
         }
         task.resume()
