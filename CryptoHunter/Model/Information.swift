@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct InformationData: Codable {
+struct Information: Codable {
     let topic: String
     let content: [Content]
 }

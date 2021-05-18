@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FetchInformation {
+struct InformationService {
 
     private func getJsonURL(filename: String) -> URL? {
         guard let path = Bundle.main.path(forResource: filename, ofType: "json") else {
@@ -17,7 +17,7 @@ struct FetchInformation {
         return url
     }
 
-    func parseJson(filename: String) -> [InformationData] {
+    func parseJson(filename: String) -> [Information] {
 
         guard let url = getJsonURL(filename: filename) else {
             return []
@@ -25,7 +25,7 @@ struct FetchInformation {
 
         do {
             let jsonData = try Data(contentsOf: url)
-            let information = try JSONDecoder().decode([InformationData].self, from: jsonData)
+            let information = try JSONDecoder().decode([Information].self, from: jsonData)
             return information
 
         } catch {

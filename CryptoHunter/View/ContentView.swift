@@ -12,12 +12,12 @@ struct ContentView: View {
         TabView {
             Dashboard()
                 .tabItem {
-                    Image("")
+                    Image("dashboard").renderingMode(.template)
                     Text("Dashboard")
                 }
-            Information()
+            InformationView()
                 .tabItem {
-                    Image("")
+                    Image("information").renderingMode(.template)
                     Text("Informations")
                 }
         }

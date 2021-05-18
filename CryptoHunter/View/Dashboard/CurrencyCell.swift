@@ -9,10 +9,9 @@ import SwiftUI
 
 struct CurrencyCell: View {
     var currency: Currency
+
     var body: some View {
-
         ZStack {
-
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.sRGB, red: 4/255, green: 20/255, blue: 25/255, opacity: 1))
                 .clipShape(RoundedRectangle(cornerRadius: 16))
@@ -20,7 +19,11 @@ struct CurrencyCell: View {
                 .padding(.vertical, 4)
 
             HStack {
-//                Image("")
+                AsyncImage(url: URL(string: "https://cryptoicons.org/api/white/btc/200")!,
+                               placeholder: { ProgressView() },
+                               image: { Image(uiImage: $0).resizable() })
+                        .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
+                        .padding(.trailing, 8)
                 VStack(alignment: .leading) {
                     Text(currency.id)
                     Text(currency.name)
