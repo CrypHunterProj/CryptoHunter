@@ -10,7 +10,6 @@ import SwiftUI
 
 struct Dashboard: View {
     var body: some View {
-        let viewModel = DashboardViewModel()
         NavigationView {
             VStack {
                 DashboardHeader().zIndex(1)
