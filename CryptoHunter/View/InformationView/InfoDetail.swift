@@ -91,6 +91,6 @@ struct InfoDetail_Previews: PreviewProvider {
                 title: "Criptomoedas", image: "bitcoinsign.circle.fill"
             ))
         }
-            .previewDevice("iPhone 11")
+            .previewDevice("iPhone SE (2nd generation)")
     }
 }

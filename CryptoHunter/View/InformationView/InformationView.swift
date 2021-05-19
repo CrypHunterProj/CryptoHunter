@@ -33,15 +33,15 @@ struct InformationView: View {
                     }
                     .foregroundColor(.white)
                 }
-            /*  DEBUG
                 .onAppear(perform: {
-                    let fetchInfo = FetchInformation()
-                    let information = fetchInfo.parseJson(filename: "Informacoes")
-                    print(information)
+// MARK: - Debug
+                    /*
+                     CurrencyService.gettingCryptocoins { cryptoCoins in
+                     print(cryptoCoins)
+                     }
+                     */
                 })
-            */
             }
-
             .navigationTitle("Informações")
         }
     }
