@@ -40,7 +40,7 @@ struct CurrencyList: View {
                     Currency(
                         id: cryptoCoin.symbol,
                         name: cryptoCoin.name,
-                        value: Double(cryptoCoin.quote.BRL!.market_cap ?? 0),
+                         value: Double( Int( cryptoCoin.quote.BRL!.market_cap! * 100 ) ) / 100,
                         image: "",
                         percentage: Int(cryptoCoin.quote.BRL!.percent_change_24h ?? 0)
                     )

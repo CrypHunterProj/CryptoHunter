@@ -29,8 +29,13 @@ struct CurrencyCell: View {
                     Text(currency.name)
                 }
                 Spacer()
-                VStack(alignment: .trailing) {
-                    Text("R$\(currency.value)")
+                VStack(alignment: .trailing, spacing: 5) {
+                    Text("\(currency.value.currencyFormat)")
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                        .allowsTightening(true)
+                        .minimumScaleFactor(0.1)
+
                     HStack {
 //                        Image("upArrow")
                         Text("\(currency.percentage)%")
