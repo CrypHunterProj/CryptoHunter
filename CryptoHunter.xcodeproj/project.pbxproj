@@ -19,6 +19,7 @@
 		18C710CE265402CC0082C6EA /* CurrencyServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710CD265402CC0082C6EA /* CurrencyServiceError.swift */; };
 		18C710D026547C2B0082C6EA /* InformationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710CF26547C2B0082C6EA /* InformationService.swift */; };
 		18C710D126547DDB0082C6EA /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBF10F264F16760053CD43 /* InformationView.swift */; };
+		18C710D3265550F40082C6EA /* CoinMarketCapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710D2265550F40082C6EA /* CoinMarketCapRouter.swift */; };
 		507150ED264D4E00002E62AD /* DashboardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150EC264D4E00002E62AD /* DashboardHeader.swift */; };
 		507150EF264D6F6C002E62AD /* CurrencyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150EE264D6F6C002E62AD /* CurrencyDetail.swift */; };
 		507150F1264D6F8C002E62AD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F0264D6F8C002E62AD /* CurrencyCell.swift */; };
@@ -132,6 +133,7 @@
 		18C710CB2653EDDD0082C6EA /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		18C710CD265402CC0082C6EA /* CurrencyServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyServiceError.swift; sourceTree = "<group>"; };
 		18C710CF26547C2B0082C6EA /* InformationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationService.swift; sourceTree = "<group>"; };
+		18C710D2265550F40082C6EA /* CoinMarketCapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapRouter.swift; sourceTree = "<group>"; };
 		507150EC264D4E00002E62AD /* DashboardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardHeader.swift; sourceTree = "<group>"; };
 		507150EE264D6F6C002E62AD /* CurrencyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetail.swift; sourceTree = "<group>"; };
 		507150F0264D6F8C002E62AD /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 				18C710CD265402CC0082C6EA /* CurrencyServiceError.swift */,
 				18C710CF26547C2B0082C6EA /* InformationService.swift */,
 				18C710CB2653EDDD0082C6EA /* CurrencyService.swift */,
+				18C710D2265550F40082C6EA /* CoinMarketCapRouter.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 				50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */,
 				188385E126529F78003ACB1C /* CryptoData.swift in Sources */,
 				18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */,
+				18C710D3265550F40082C6EA /* CoinMarketCapRouter.swift in Sources */,
 				50971EFC264BFB32000223C0 /* Currency.swift in Sources */,
 				18BBF10A264EB6230053CD43 /* Information.swift in Sources */,
 				50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */,
@@ -937,7 +941,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CryptoHunter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -961,7 +965,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CryptoHunter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -987,7 +991,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				IBSC_MODULE = CryptoHunter_WatchKit_Extension;
 				INFOPLIST_FILE = "CryptoHunter WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp;
@@ -1007,7 +1011,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				IBSC_MODULE = CryptoHunter_WatchKit_Extension;
 				INFOPLIST_FILE = "CryptoHunter WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp;
@@ -1028,7 +1032,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter/Preview Content\"";
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CryptoHunter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -1051,7 +1055,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter/Preview Content\"";
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CryptoHunter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -1074,7 +1078,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = CryptoHunterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1097,7 +1101,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = CryptoHunterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1120,7 +1124,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = CryptoHunterUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1142,7 +1146,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YBM22U9FU3;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = CryptoHunterUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1166,6 +1170,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = "CryptoHunter WatchKit AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1188,6 +1193,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = "CryptoHunter WatchKit AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1209,6 +1215,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = "CryptoHunter WatchKit AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1229,6 +1236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				INFOPLIST_FILE = "CryptoHunter WatchKit AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
