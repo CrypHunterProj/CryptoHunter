@@ -10,7 +10,7 @@ import SwiftUI
 struct InfoDetail: View {
     var infoDetail: InfoCardModel
 
-    @State private var information: InformationData?
+    @State private var information: Information?
 
     @State private var imageRotateAnimation: Bool = false
 
@@ -68,7 +68,7 @@ struct InfoDetail: View {
         }
         .navigationTitle(Text(infoDetail.title))
         .onAppear(perform: {
-            let fetchInfo = FetchInformation()
+            let fetchInfo = InformationService()
             let informationDataArray = fetchInfo.parseJson(filename: "Informacoes")
 
             // filtrar o informationArray e pegar só o da Tela que vc entrou (Criptomoeads, Blockchain, ...)
