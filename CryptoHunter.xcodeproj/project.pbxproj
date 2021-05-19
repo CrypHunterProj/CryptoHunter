@@ -45,7 +45,8 @@
 		50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF2264BFB31000223C0 /* AppFonts.swift */; };
 		50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF6264BFB32000223C0 /* DashboardViewModel.swift */; };
 		50971F02264BFB32000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFA264BFB32000223C0 /* ContentView.swift */; };
-		50971F06264C013A000223C0 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 50971F05264C013A000223C0 /* SwiftUICharts */; };
+		ECB331AB26553ADA004FEEAB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECB331AA26553ADA004FEEAB /* SwiftUICharts */; };
+		ECB331C226553B27004FEEAB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECB331C126553B27004FEEAB /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,7 +136,6 @@
 		507150EE264D6F6C002E62AD /* CurrencyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetail.swift; sourceTree = "<group>"; };
 		507150F0264D6F8C002E62AD /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		507150F2264D70D9002E62AD /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
-		507150F82652ACD3002E62AD /* ChartView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ChartView; path = ../../ChartView; sourceTree = "<group>"; };
 		507150F92653EB6B002E62AD /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		50971E6F264BFA86000223C0 /* CryptoHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50971E72264BFA86000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50971F06264C013A000223C0 /* SwiftUICharts in Frameworks */,
+				ECB331AB26553ADA004FEEAB /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB331C226553B27004FEEAB /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +265,7 @@
 				50971EBD264BFA8A000223C0 /* CryptoHunter WatchKit AppTests */,
 				50971EC8264BFA8A000223C0 /* CryptoHunter WatchKit AppUITests */,
 				50971E70264BFA86000223C0 /* Products */,
+				ECB3318A26553886004FEEAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,7 +286,6 @@
 		50971E71264BFA86000223C0 /* CryptoHunter */ = {
 			isa = PBXGroup;
 			children = (
-				507150F82652ACD3002E62AD /* ChartView */,
 				18BBF106264EB25B0053CD43 /* Helpers */,
 				50971EF1264BFB31000223C0 /* Extension */,
 				50971EF3264BFB32000223C0 /* Service */,
@@ -422,6 +423,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		ECB3318A26553886004FEEAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -442,7 +450,7 @@
 			);
 			name = CryptoHunter;
 			packageProductDependencies = (
-				50971F05264C013A000223C0 /* SwiftUICharts */,
+				ECB331AA26553ADA004FEEAB /* SwiftUICharts */,
 			);
 			productName = CryptoHunter;
 			productReference = 50971E6F264BFA86000223C0 /* CryptoHunter.app */;
@@ -512,8 +520,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				ECB331CB26553B3D004FEEAB /* PBXTargetDependency */,
 			);
 			name = "CryptoHunter WatchKit Extension";
+			packageProductDependencies = (
+				ECB331C126553B27004FEEAB /* SwiftUICharts */,
+			);
 			productName = "CryptoHunter WatchKit Extension";
 			productReference = 50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -600,7 +612,7 @@
 			);
 			mainGroup = 50971E66264BFA86000223C0;
 			packageReferences = (
-				50971F04264C013A000223C0 /* XCRemoteSwiftPackageReference "ChartView" */,
+				ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 50971E70264BFA86000223C0 /* Products */;
 			projectDirPath = "";
@@ -801,6 +813,10 @@
 			target = 50971E93264BFA88000223C0 /* CryptoHunter WatchKit App */;
 			targetProxy = 50971EC6264BFA8A000223C0 /* PBXContainerItemProxy */;
 		};
+		ECB331CB26553B3D004FEEAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = ECB331CA26553B3D004FEEAB /* SwiftUICharts */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -921,6 +937,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CryptoHunter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -934,7 +951,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Debug;
 		};
@@ -944,6 +961,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CryptoHunter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -958,7 +976,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Release;
 		};
@@ -969,6 +987,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				IBSC_MODULE = CryptoHunter_WatchKit_Extension;
 				INFOPLIST_FILE = "CryptoHunter WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp;
@@ -977,7 +996,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Debug;
 		};
@@ -988,6 +1007,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				IBSC_MODULE = CryptoHunter_WatchKit_Extension;
 				INFOPLIST_FILE = "CryptoHunter WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = academy.CryptoHunter.watchkitapp;
@@ -997,7 +1017,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Release;
 		};
@@ -1008,9 +1028,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CryptoHunter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1030,9 +1051,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CryptoHunter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1052,6 +1074,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				INFOPLIST_FILE = CryptoHunterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1074,6 +1097,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				INFOPLIST_FILE = CryptoHunterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1096,6 +1120,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				INFOPLIST_FILE = CryptoHunterUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1117,6 +1142,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
 				INFOPLIST_FILE = CryptoHunterUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1298,20 +1324,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		50971F04264C013A000223C0 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+		ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
+			repositoryURL = "https://github.com/CrypHunterProj/ChartView.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.5;
+				kind = revision;
+				revision = 180df91f651b96a2a9acb7133307f37c67a12374;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		50971F05264C013A000223C0 /* SwiftUICharts */ = {
+		ECB331AA26553ADA004FEEAB /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 50971F04264C013A000223C0 /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		ECB331C126553B27004FEEAB /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		ECB331CA26553B3D004FEEAB /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
