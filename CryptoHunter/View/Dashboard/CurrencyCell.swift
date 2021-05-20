@@ -27,13 +27,14 @@ struct CurrencyCell: View {
                 VStack(alignment: .leading) {
                     Text(currency.id)
                         .font(.callout)
+                        .bold()
                     Text(currency.name)
                         .font(.caption)
                 }
                 Spacer()
                 VStack(alignment: .trailing, spacing: 5) {
                     Text("\(currency.value.currencyFormat)")
-                        .font(.callout)
+                        .font(.footnote)
                         .lineLimit(1)
                         .truncationMode(.middle)
                         .allowsTightening(true)
