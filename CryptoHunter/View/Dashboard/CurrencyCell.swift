@@ -20,25 +20,33 @@ struct CurrencyCell: View {
 
             HStack {
                 AsyncImage(url: URL(string: "https://cryptoicons.org/api/white/\(currency.id.lowercased())/200")!,
-                           placeholder: { ProgressView() },
+                           placeholder: { getCurrencyDefaultImage(named: currency.id.lowercased()) },
                            image: { Image(uiImage: $0).resizable() })
                         .frame(width: 36, height: 36)
                         .padding(.trailing, 8)
                 VStack(alignment: .leading) {
                     Text(currency.id)
+                        .font(.callout)
+                        .bold()
                     Text(currency.name)
+                        .font(.caption)
                 }
                 Spacer()
                 VStack(alignment: .trailing, spacing: 5) {
                     Text("\(currency.value.currencyFormat)")
+                        .font(.footnote)
                         .lineLimit(1)
                         .truncationMode(.middle)
                         .allowsTightening(true)
                         .minimumScaleFactor(0.1)
 
                     HStack {
-//                        Image("upArrow")
+                        (currency.percentage > 0 ? Image("upArrow") : Image("downArrow"))
+                            .resizable()
+                            .frame(width: 8, height: 8)
+
                         Text("\(currency.percentage)%")
+                            .font(.caption)
                     }
                 }
             }
@@ -46,6 +54,11 @@ struct CurrencyCell: View {
             .foregroundColor(.white)
             .padding(.horizontal, 42)
         }
+    }
+
+    func getCurrencyDefaultImage(named: String) -> Image {
+        let uiImage =  (UIImage(named: named) ?? UIImage(named: "aeur"))!
+        return Image(uiImage: uiImage)
     }
 }
 
