@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrencyCell: View {
-    var currency: Currency
+    @State var currency: Currency
 
     var body: some View {
         ZStack {
@@ -19,7 +19,7 @@ struct CurrencyCell: View {
                 .padding(.vertical, 4)
 
             HStack {
-                AsyncImage(url: URL(string: "https://cryptoicons.org/api/white/eth/200")!,
+                AsyncImage(url: URL(string: "https://cryptoicons.org/api/white/\(currency.id.lowercased())/200")!,
                            placeholder: { ProgressView() },
                            image: { Image(uiImage: $0).resizable() })
                         .frame(width: 36, height: 36)
