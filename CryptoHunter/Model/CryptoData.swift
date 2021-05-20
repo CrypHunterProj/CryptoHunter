@@ -7,11 +7,16 @@
 
 import Foundation
 
-struct CryptoData: Codable {
+struct CryptoData: Codable, Equatable {
     let data: [CryptoCoin]
 }
 
-struct CryptoCoin: Codable {
+struct CryptoCoin: Codable, Equatable {
+
+    static func == (lhs: CryptoCoin, rhs: CryptoCoin) -> Bool {
+        return lhs.id == rhs.id
+    }
+
     let id: Int
     let name: String
     let symbol: String
