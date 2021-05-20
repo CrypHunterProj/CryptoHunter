@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct CryptoHunterApp: App {
+
+    let viewModel = ViewModel(IphoneConnectionProvider())
+
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView(viewModel: viewModel)
             }
         }
 

@@ -49,6 +49,9 @@
 		50971F02264BFB32000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFA264BFB32000223C0 /* ContentView.swift */; };
 		ECB331AB26553ADA004FEEAB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECB331AA26553ADA004FEEAB /* SwiftUICharts */; };
 		ECB331C226553B27004FEEAB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECB331C126553B27004FEEAB /* SwiftUICharts */; };
+		ECB331E226554DA2004FEEAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB331E126554DA2004FEEAB /* ViewModel.swift */; };
+		ECB3320A26555440004FEEAB /* iPhoneConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */; };
+		ECE6E96026568504007527E4 /* WatchConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +178,9 @@
 		50971EF2264BFB31000223C0 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		50971EF6264BFB32000223C0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		50971EFA264BFB32000223C0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECB331E126554DA2004FEEAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneConnectionProvider.swift; sourceTree = "<group>"; };
+		ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectionProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +347,8 @@
 		50971EA4264BFA89000223C0 /* CryptoHunter WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */,
+				ECB331E126554DA2004FEEAB /* ViewModel.swift */,
 				50971EA5264BFA89000223C0 /* CryptoHunterApp.swift */,
 				50971EA7264BFA89000223C0 /* ContentView.swift */,
 				50971EA9264BFA89000223C0 /* NotificationController.swift */,
@@ -405,6 +413,7 @@
 				18C710CD265402CC0082C6EA /* CurrencyServiceError.swift */,
 				18C710CF26547C2B0082C6EA /* InformationService.swift */,
 				18C710CB2653EDDD0082C6EA /* CurrencyService.swift */,
+				ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */,
 				18C710D2265550F40082C6EA /* CoinMarketCapRouter.swift */,
 			);
 			path = Service;
@@ -733,6 +742,7 @@
 				50971F02264BFB32000223C0 /* ContentView.swift in Sources */,
 				18A33A55264D85F600F967F2 /* InfoCardView.swift in Sources */,
 				18A33A53264D85BF00F967F2 /* InfoDetail.swift in Sources */,
+				ECE6E96026568504007527E4 /* WatchConnectionProvider.swift in Sources */,
 				507150F1264D6F8C002E62AD /* CurrencyCell.swift in Sources */,
 				18C710CC2653EDDD0082C6EA /* CurrencyService.swift in Sources */,
 				507150EF264D6F6C002E62AD /* CurrencyDetail.swift in Sources */,
@@ -765,9 +775,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50971EAA264BFA89000223C0 /* NotificationController.swift in Sources */,
+				ECB3320A26555440004FEEAB /* iPhoneConnectionProvider.swift in Sources */,
 				50971EA8264BFA89000223C0 /* ContentView.swift in Sources */,
 				50971EAE264BFA89000223C0 /* ComplicationController.swift in Sources */,
 				50971EA6264BFA89000223C0 /* CryptoHunterApp.swift in Sources */,
+				ECB331E226554DA2004FEEAB /* ViewModel.swift in Sources */,
 				50971EAC264BFA89000223C0 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
