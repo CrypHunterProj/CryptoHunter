@@ -9,23 +9,28 @@ import UIKit
 import SwiftUI
 
 struct Dashboard: View {
+
+    @ObservedObject var viewModel: DashboardViewModel
+
     var body: some View {
         NavigationView {
             VStack {
-                DashboardHeader().zIndex(1)
+                if viewModel.dashboardState == .done {
+                DashboardHeader(viewModel: viewModel).zIndex(1)
                 Spacer(minLength: 32)
-                CurrencyList()
-            }
+                    CurrencyList(items: viewModel.getCurrencyFromCoin())
             .navigationBarTitle("Dashboard", displayMode: .automatic)
             .navigationBarItems(trailing: Button("Edit") {})
         }
+        }
+    }
     }
 }
 
-struct Dashboard_Previews: PreviewProvider {
-    static var previews: some View {
-        Dashboard()
-            .preferredColorScheme(.dark)
-            .previewDevice("iPhone 11")
-    }
-}
+//struct Dashboard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Dashboard()
+//            .preferredColorScheme(.dark)
+//            .previewDevice("iPhone 11")ß
+//    }
+//}

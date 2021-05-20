@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    let dashboardVM = DashboardViewModel(provider: WatchConnectionProvider())
+
     var body: some View {
         TabView {
-            Dashboard()
+            Dashboard(viewModel: dashboardVM)
                 .tabItem {
                     Image("dashboard").renderingMode(.template)
                     Text("Dashboard")
