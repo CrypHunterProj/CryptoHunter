@@ -17,7 +17,11 @@ struct Dashboard: View {
                 CurrencyList()
             }
             .navigationBarTitle("Dashboard", displayMode: .automatic)
-            .navigationBarItems(trailing: Button("Edit") {})
+            .navigationBarItems(trailing: Button(action: {
+                print("Click")
+            }, label: {
+                Image(systemName: "slider.horizontal.3")
+            }))
         }
     }
 }

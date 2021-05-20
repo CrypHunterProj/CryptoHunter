@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrencyList: View {
-    let items = [Currency(id: "BTC", name: "Bitcoin", value: 2000.00, image: "", percentage: 14),
+    @State var items = [Currency(id: "BTC", name: "Bitcoin", value: 2000.00, image: "", percentage: 14),
                  Currency(id: "ETH", name: "Etherium", value: 2400.00, image: "", percentage: 23),
                  Currency(id: "BTC", name: "Bitcoin", value: 2000.00, image: "", percentage: 14),
                  Currency(id: "ETH", name: "Etherium", value: 2400.00, image: "", percentage: 23),
@@ -32,6 +32,20 @@ struct CurrencyList: View {
                                                      startPoint: .topLeading,
                                                      endPoint: .bottomTrailing))
                                 .padding(.bottom, -300))
+            }
+        }
+        .onAppear {
+            CurrencyService.gettingCryptocoins { cryptoCoins in
+                let currencies = cryptoCoins.map { cryptoCoin in
+                    Currency(
+                        id: cryptoCoin.symbol,
+                        name: cryptoCoin.name,
+                         value: Double( Int( cryptoCoin.quote.BRL!.market_cap! * 100 ) ) / 100,
+                        image: "",
+                        percentage: Int(cryptoCoin.quote.BRL!.percent_change_24h ?? 0)
+                    )
+                }
+                self.items = currencies
             }
         }
     }
