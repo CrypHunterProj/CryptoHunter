@@ -40,7 +40,7 @@ struct CurrencyService {
 
     /// Verifica se há um arquivo persistido no dia e retorna um booleano
     private static func hasPersistedCryptocoinsForToday() -> Bool {
-        //Gerando caminho para o arquivo do dia atual
+        // Gerando caminho para o arquivo do dia atual
         let documentsURL: URL = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
         let fileURL: URL = documentsURL.appendingPathComponent(gettingListingFilename())
         let filePath: String = fileURL.relativePath
@@ -72,11 +72,11 @@ struct CurrencyService {
     /// - Parameter data: Data do json que foi retornado na requisicao.
     /// - Throws: Erro que o data.write lança.
     private static func persistListingsCurrency(data: Data) throws {
-        //Gerando caminho para o arquivo do dia atual
+        // Gerando caminho para o arquivo do dia atual
         let documentsURL: URL = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
         let fileURL: URL = documentsURL.appendingPathComponent(gettingListingFilename())
 
-        //Persistindo data no caminho
+        // Persistindo data no caminho
         try data.write(to: fileURL)
     }
 
