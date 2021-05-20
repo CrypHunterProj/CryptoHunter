@@ -11,15 +11,15 @@ struct Information: View {
 
     let infoCards = [
         InfoCardModel(
-            title: "Criptomoedas", image: "bitcoinsign.circle.fill"
+            title: "Criptomoedas", image: "Icone-Card-Criptomoedas"
         ),
         InfoCardModel(
-            title: "Blockchain", image: "bitcoinsign.circle.fill"
+            title: "Blockchain", image: "Icone-Card-Blockchain"
         ),
         InfoCardModel(
-            title: "Transações", image: "bitcoinsign.circle.fill"),
+            title: "Transações", image: "Icone-Card-Transacoes"),
         InfoCardModel(
-            title: "Cotações", image: "bitcoinsign.circle.fill"
+            title: "Cotações", image: "Icone-Card-Cotacoes"
         )
     ]
 
