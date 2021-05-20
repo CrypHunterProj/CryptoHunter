@@ -13,7 +13,7 @@ struct CurrencyCell: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16)
-                .fill(Color("background"))
+                .fill(Color("backgroundCell"))
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal, 24)
                 .padding(.vertical, 4)
