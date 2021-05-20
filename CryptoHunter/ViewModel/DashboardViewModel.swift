@@ -6,7 +6,18 @@
 //
 
 import Foundation
+import WatchConnectivity
 
-struct DashboardViewModel {
+class DashboardViewModel: ObservableObject {
 
+    var provider: WatchConnectionProvider
+
+    init(provider: WatchConnectionProvider) {
+        self.provider = provider
+    }
+}
+
+extension DashboardViewModel {
+    func sendFileToWatch() {
+    }
 }
