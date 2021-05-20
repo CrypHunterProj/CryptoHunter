@@ -67,6 +67,12 @@ struct InfoDetail: View {
             }
         }
         .navigationTitle(Text(infoDetail.title))
+        .background(LinearGradient(gradient:
+                                    Gradient(colors:
+                                                [Color("backgroundStart"), Color("backgroundEnd")]
+        ),
+                             startPoint: .topLeading,
+                             endPoint: .bottomTrailing).ignoresSafeArea())
         .onAppear(perform: {
             let fetchInfo = InformationService()
             let informationDataArray = fetchInfo.parseJson(filename: "Informacoes")
