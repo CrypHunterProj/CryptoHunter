@@ -12,6 +12,7 @@ class DashboardViewModel: ObservableObject {
 
     var provider: WatchConnectionProvider
     @Published var criptoCoins: [CryptoCoin] = []
+    @Published var currency: [Currency] = []
     @Published private(set) var dashboardState = State.loading
 
     init(provider: WatchConnectionProvider) {
@@ -32,6 +33,7 @@ extension DashboardViewModel {
             coins.forEach {
                 self.criptoCoins.append($0)
             }
+            self.getCurrencyFromCoin()
             self.dashboardState = .done
         }
     }
@@ -50,18 +52,17 @@ extension DashboardViewModel {
     }
 
     func getDataFor(coin: CryptoCoin) -> [Double] {
-        let quote = coin.quote.BRL!
         var data: [Double] = []
-        let last = quote.price! * quote.percent_change_24h!
+        let last = (coin.priceBRL) * (coin.percentChange24Hrs)
         data.append(last)
-        data.append(quote.price!)
+        data.append(coin.priceBRL)
         return data
     }
 
     func getPercentForIndex(_ index: Int) -> Int {
         if index <= self.numberOfCoins {
             let coin = self.criptoCoins[index]
-            return Int((coin.quote.BRL?.percent_change_24h)!)
+            return Int(coin.percentChange24Hrs)
         } else {
             return 0
         }
@@ -75,11 +76,9 @@ extension DashboardViewModel {
         }
     }
 
-    func getCurrencyFromCoin() -> [Currency] {
-        var arrayOfCurrency: [Currency] = []
+    func getCurrencyFromCoin() {
         self.criptoCoins.forEach {
-            arrayOfCurrency.append(Currency.init(id: $0.symbol, name: $0.name, value: ($0.quote.BRL?.price)!, image: "AppIcon", percentage: Int(($0.quote.BRL?.percent_change_24h)!)))
+            self.currency.append(Currency.init(id: $0.symbol, name: $0.name, value: ($0.priceBRL), image: "AppIcon", percentage: Int($0.percentChange24Hrs)))
         }
-        return arrayOfCurrency
     }
 }

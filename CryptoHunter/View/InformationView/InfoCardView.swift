@@ -15,7 +15,7 @@ struct InfoCardView: View {
         HStack(alignment: .center) {
             Text(model.title).padding(.leading, 20)
             Spacer()
-            Image(systemName: model.image)
+            Image(model.image)
                 .padding(.trailing, 20)
                 .font(.system(size: 45))
 

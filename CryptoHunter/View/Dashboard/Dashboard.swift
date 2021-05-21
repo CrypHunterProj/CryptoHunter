@@ -18,9 +18,13 @@ struct Dashboard: View {
                 if viewModel.dashboardState == .done {
                 DashboardHeader(viewModel: viewModel).zIndex(1)
                 Spacer(minLength: 32)
-                    CurrencyList(items: viewModel.getCurrencyFromCoin())
+                    CurrencyList(items: viewModel.currency)
             .navigationBarTitle("Dashboard", displayMode: .automatic)
-            .navigationBarItems(trailing: Button("Edit") {})
+            .navigationBarItems(trailing: Button(action: {
+                print("Click")
+            }, label: {
+                Image(systemName: "slider.horizontal.3")
+            }))
         }
         }
     }
