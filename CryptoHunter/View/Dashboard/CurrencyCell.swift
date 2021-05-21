@@ -64,7 +64,7 @@ struct CurrencyCell: View {
 
 struct CurrencyCell_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyCell(currency: Currency(id: "", name: "", value: 2000, image: "", percentage: 0))
+        CurrencyCell(currency: Currency(id: "", name: "", value: 220110.55398024683, image: "", percentage: 0))
             .previewLayout(.fixed(width: 400, height: 80))
     }
 }

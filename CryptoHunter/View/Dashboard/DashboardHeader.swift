@@ -10,20 +10,24 @@ import SwiftUI
 import SwiftUICharts
 
 struct DashboardHeader: View {
+    @ObservedObject var viewModel: DashboardViewModel
     var body: some View {
         VStack {
             HStack {
-                LineChartView(data: [1, 12, 4, 15],
-                              title: "BTC",
+                LineChartView(data: viewModel.getDataForIndex(0),
+                              title: viewModel.getSymbolForIndex(0),
                               form: CGSize(width: 120, height: 100),
+                              rateValue: viewModel.getPercentForIndex(0),
                               dropShadow: false)
-                LineChartView(data: [20, 12, 44, 15],
-                              title: "ETH",
+                LineChartView(data: viewModel.getDataForIndex(1),
+                              title: viewModel.getSymbolForIndex(1),
                               form: CGSize(width: 120, height: 100),
+                              rateValue: viewModel.getPercentForIndex(1),
                               dropShadow: false)
-                LineChartView(data: [12, 12, 4, 15],
-                              title: "ADV",
+                LineChartView(data: viewModel.getDataForIndex(2),
+                              title: viewModel.getSymbolForIndex(2),
                               form: CGSize(width: 120, height: 100),
+                              rateValue: viewModel.getPercentForIndex(2),
                               dropShadow: false)
             }.padding(.vertical, 16)
             Text("These are your favorite coins, you can edit it by dragging the coin cell or tapping the top right corner button.")
@@ -34,9 +38,9 @@ struct DashboardHeader: View {
     }
 }
 
-struct DashboardHeader_Previews: PreviewProvider {
-    static var previews: some View {
-        DashboardHeader()
-            .previewLayout(.fixed(width: 400, height: 300))
-    }
-}
+//struct DashboardHeader_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DashboardHeader()
+//            .previewLayout(.fixed(width: 400, height: 300))
+//    }
+//}

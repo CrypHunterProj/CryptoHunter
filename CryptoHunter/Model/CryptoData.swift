@@ -35,3 +35,12 @@ struct CryptoValue: Codable {
     let percent_change_90d: Double?
     let market_cap: Double?
 }
+
+extension CryptoCoin {
+    public var priceBRL: Double {
+        return self.quote.BRL?.price ?? 0
+    }
+    public var percentChange24Hrs: Double {
+        return self.quote.BRL?.percent_change_24h ?? 0
+    }
+}

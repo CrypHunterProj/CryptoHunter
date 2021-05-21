@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrencyList: View {
-    @State var items = [Currency]()
+    @State var items: [Currency]
 
     var body: some View {
         ZStack {
@@ -27,25 +27,25 @@ struct CurrencyList: View {
                                 .padding(.bottom, -300))
             }
         }
-        .onAppear {
-            CurrencyService.gettingCryptocoins { cryptoCoins in
-                let currencies = cryptoCoins.map { cryptoCoin in
-                    Currency(
-                        id: cryptoCoin.symbol,
-                        name: cryptoCoin.name,
-                         value: Double( Int( cryptoCoin.quote.BRL!.market_cap! * 100 ) ) / 100,
-                        image: "",
-                        percentage: Int(cryptoCoin.quote.BRL!.percent_change_24h ?? 0)
-                    )
-                }
-                self.items = currencies
-            }
-        }
+//        .onAppear {
+//            CurrencyService.gettingCryptocoins { cryptoCoins in
+//                let currencies = cryptoCoins.map { cryptoCoin in
+//                    Currency(
+//                        id: cryptoCoin.symbol,
+//                        name: cryptoCoin.name,
+//                         value: Double( Int( cryptoCoin.quote.BRL!.market_cap! * 100 ) ) / 100,
+//                        image: "",
+//                        percentage: Int(cryptoCoin.quote.BRL!.percent_change_24h ?? 0)
+//                    )
+//                }
+//                self.items = currencies
+//            }
+//        }
     }
 }
 
-struct CurrencyList_Previews: PreviewProvider {
-    static var previews: some View {
-        CurrencyList()
-    }
-}
+//struct CurrencyList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CurrencyList()
+//    }
+//}
