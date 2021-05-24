@@ -8,19 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selection = 0
+
     var body: some View {
-        TabView {
+        UITabBar.appearance().barTintColor = UIColor(named: "backgroundTabBar")
+        UITabBar.appearance().unselectedItemTintColor = UIColor(named: "imageTabItemUnselected")
+
+        return TabView(selection: $selection) {
             Dashboard()
                 .tabItem {
-                    Image("dashboard").renderingMode(.template)
+                    selection == 0 ? Image("dashboardHighlighted").renderingMode(.original) : Image("dashboard").renderingMode(.original)
+
                     Text("Dashboard")
-                }
+
+                }.tag(0)
             InformationView()
                 .tabItem {
-                    Image("information").renderingMode(.template)
+                    selection == 1 ? Image("informationHightlighted").renderingMode(.original) : Image("information").renderingMode(.original)
+
                     Text("Informations")
-                }
-        }
+                }.tag(1)
+        }.accentColor(Color("textTabItemSelected"))
     }
 }
 
