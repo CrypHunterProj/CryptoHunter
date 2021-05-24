@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CurrencyServiceError: Error {
+enum CurrencyServiceError: Error, Equatable {
     case dataIsNil
     case decodeError(errorDescription: String)
 
