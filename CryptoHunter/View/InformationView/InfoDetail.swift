@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct InfoDetail: View {
+
     var infoDetail: InfoCardModel
 
     @State private var information: Information?
@@ -19,12 +20,11 @@ struct InfoDetail: View {
             HStack {
                 Spacer().padding()
 
-                Image(systemName: name) // Pegar dos assets as outras imagens
-                    .font(Font.system(size: 100))
-                    .opacity(0.5)
-                    .padding(.top, -80)
-                    .padding(.trailing, -60)
-                    .rotationEffect(imageRotateAnimation ? Angle(degrees: -45) : .zero)
+                Image(name) 
+                    .scaleEffect(2.3)
+                    .padding(.top, -20)
+                    .padding([.trailing, .bottom], 40)
+                    .rotationEffect(imageRotateAnimation ? Angle(degrees: -25) : .zero)
                     .animation(.easeIn(duration: 1))
             }
 
@@ -62,7 +62,7 @@ struct InfoDetail: View {
     var body: some View {
         ScrollView {
             ZStack {
-                image(name: "bitcoinsign.circle.fill")
+                image(name: infoDetail.image)
                 textContent()
             }
         }
@@ -88,7 +88,7 @@ struct InfoDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             InfoDetail(infoDetail: InfoCardModel(
-                title: "Criptomoedas", image: "bitcoinsign.circle.fill"
+                title: "Criptomoedas", image: "Icone-Card-Transacoes"
             ))
         }
             .previewDevice("iPhone SE (2nd generation)")
