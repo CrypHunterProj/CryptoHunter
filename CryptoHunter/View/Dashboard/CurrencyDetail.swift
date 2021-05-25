@@ -9,7 +9,10 @@ import SwiftUI
 import SwiftUICharts
 
 struct CurrencyDetail: View {
+
+    @ObservedObject var viewModel: DashboardViewModel
     var currency: Currency
+    var coin: CryptoCoin
 
     var body: some View {
             ScrollView {
@@ -24,9 +27,10 @@ struct CurrencyDetail: View {
                                 .font(.headline)
                         }
                     }.padding(.leading, 16)
-                    LineChartView(data: [42.2, 26.4, 36.5, 55.3],
-                                  title: "BRL",
+                    LineChartView(data: viewModel.getDataFor(coin: coin),
+                                  title: coin.name,
                                   form: ChartForm.large,
+                                  rateValue: Int(coin.percentChange24Hrs),
                                   dropShadow: false)
                         .padding(.top, 24)
                 }
@@ -39,8 +43,8 @@ struct CurrencyDetail: View {
     }
 }
 
-struct CurrencyDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        CurrencyDetail(currency: Currency(id: "", name: "", value: 2000, image: "", percentage: 0))
-    }
-}
+// struct CurrencyDetail_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CurrencyDetail(currency: Currency(id: "", name: "", value: 2000, image: "", percentage: 0))
+//    }
+// }
