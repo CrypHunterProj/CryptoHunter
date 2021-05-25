@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State var selection = 0
 
-
     let dashboardVM = DashboardViewModel(provider: WatchConnectionProvider())
 
     var body: some View {

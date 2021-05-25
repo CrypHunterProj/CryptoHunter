@@ -31,10 +31,10 @@ struct Dashboard: View {
     }
 }
 
-//struct Dashboard_Previews: PreviewProvider {
+// struct Dashboard_Previews: PreviewProvider {
 //    static var previews: some View {
 //        Dashboard()
 //            .preferredColorScheme(.dark)
 //            .previewDevice("iPhone 11")ß
 //    }
-//}
+// }

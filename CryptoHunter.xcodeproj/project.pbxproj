@@ -150,6 +150,7 @@
 		507150F0264D6F8C002E62AD /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		507150F2264D70D9002E62AD /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
 		507150F92653EB6B002E62AD /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		507150FE265D40DC002E62AD /* ChartView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ChartView; path = ../../../../Desktop/ChartView; sourceTree = "<group>"; };
 		50971E6F264BFA86000223C0 /* CryptoHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50971E72264BFA86000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
 		50971E76264BFA88000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -312,6 +313,7 @@
 		50971E71264BFA86000223C0 /* CryptoHunter */ = {
 			isa = PBXGroup;
 			children = (
+				507150FE265D40DC002E62AD /* ChartView */,
 				18BBF106264EB25B0053CD43 /* Helpers */,
 				50971EF1264BFB31000223C0 /* Extension */,
 				50971EF3264BFB32000223C0 /* Service */,

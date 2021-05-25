@@ -16,16 +16,19 @@ struct DashboardHeader: View {
             HStack {
                 LineChartView(data: viewModel.getDataForIndex(0),
                               title: viewModel.getSymbolForIndex(0),
+                              style: previewChartStyle(up: viewModel.getPercentForIndex(0) > 0),
                               form: CGSize(width: 120, height: 100),
                               rateValue: viewModel.getPercentForIndex(0),
                               dropShadow: false)
                 LineChartView(data: viewModel.getDataForIndex(1),
                               title: viewModel.getSymbolForIndex(1),
+                              style: previewChartStyle(up: viewModel.getPercentForIndex(1) > 0),
                               form: CGSize(width: 120, height: 100),
                               rateValue: viewModel.getPercentForIndex(1),
                               dropShadow: false)
                 LineChartView(data: viewModel.getDataForIndex(2),
                               title: viewModel.getSymbolForIndex(2),
+                              style: previewChartStyle(up: viewModel.getPercentForIndex(2) > 0),
                               form: CGSize(width: 120, height: 100),
                               rateValue: viewModel.getPercentForIndex(2),
                               dropShadow: false)
@@ -47,10 +50,7 @@ struct DashboardHeader: View {
 
         chartStyle = ChartStyle(backgroundColor: Color("backgroundGraphStart"),
                                     accentColor: .pink,
-                                    gradientColor: GradientColor(start: up ? .green :
-                                                                    .red,
-                                        end: up ?
-                                            .gray: .pink),
+                                    gradientColor: gradient,
                                     textColor: Color("textTabItemUnselected"),
                                     legendTextColor: .pink,
                                     dropShadowColor: .clear)
@@ -63,9 +63,9 @@ struct DashboardHeader: View {
     }
 }
 
-//struct DashboardHeader_Previews: PreviewProvider {
+// struct DashboardHeader_Previews: PreviewProvider {
 //    static var previews: some View {
 //        DashboardHeader()
 //            .previewLayout(.fixed(width: 400, height: 300))
 //    }
-//}
+// }

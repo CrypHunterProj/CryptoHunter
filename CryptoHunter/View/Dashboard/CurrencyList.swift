@@ -45,8 +45,8 @@ struct CurrencyList: View {
     }
 }
 
-//struct CurrencyList_Previews: PreviewProvider {
+// struct CurrencyList_Previews: PreviewProvider {
 //    static var previews: some View {
 //        CurrencyList()
 //    }
-//}
+// }
