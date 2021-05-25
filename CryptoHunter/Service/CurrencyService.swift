@@ -48,8 +48,8 @@ struct CurrencyService {
         return FileManager.default.fileExists(atPath: filePath)
     }
 
-    private static func request(session: URLSession = URLSession.shared,
-                                completion: @escaping (Result<[CryptoCoin], Error>) -> Void) {
+    static func request(session: URLSession = URLSession.shared,
+                        completion: @escaping (Result<[CryptoCoin], Error>) -> Void) {
 
         let task = session.dataTask(with: CoinMarketCapRouter.urlRequest) { data, _, error in
             guard let data = data, error == nil else {

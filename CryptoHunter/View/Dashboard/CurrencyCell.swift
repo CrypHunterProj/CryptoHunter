@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrencyCell: View {
-    var currency: Currency
+    @State var currency: Currency
 
     var body: some View {
         ZStack {
@@ -19,21 +19,34 @@ struct CurrencyCell: View {
                 .padding(.vertical, 4)
 
             HStack {
-                AsyncImage(url: URL(string: "https://cryptoicons.org/api/white/eth/200")!,
-                           placeholder: { ProgressView() },
+                AsyncImage(url: URL(string: "https://cryptoicons.org/api/white/\(currency.id.lowercased())/200")!,
+                           placeholder: { getCurrencyDefaultImage(named: currency.id.lowercased()) },
                            image: { Image(uiImage: $0).resizable() })
                         .frame(width: 36, height: 36)
                         .padding(.trailing, 8)
                 VStack(alignment: .leading) {
                     Text(currency.id)
+                        .font(.callout)
+                        .bold()
                     Text(currency.name)
+                        .font(.caption)
                 }
                 Spacer()
-                VStack(alignment: .trailing) {
-                    Text("R$\(currency.value)")
+                VStack(alignment: .trailing, spacing: 5) {
+                    Text("\(currency.value.currencyFormat)")
+                        .font(.footnote)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                        .allowsTightening(true)
+                        .minimumScaleFactor(0.1)
+
                     HStack {
-//                        Image("upArrow")
+                        (currency.percentage > 0 ? Image("upArrow") : Image("downArrow"))
+                            .resizable()
+                            .frame(width: 8, height: 8)
+
                         Text("\(currency.percentage)%")
+                            .font(.caption)
                     }
                 }
             }
@@ -42,11 +55,16 @@ struct CurrencyCell: View {
             .padding(.horizontal, 42)
         }
     }
+
+    func getCurrencyDefaultImage(named: String) -> Image {
+        let uiImage =  (UIImage(named: named) ?? UIImage(named: "aeur"))!
+        return Image(uiImage: uiImage)
+    }
 }
 
 struct CurrencyCell_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyCell(currency: Currency(id: "", name: "", value: 2000, image: "", percentage: 0))
+        CurrencyCell(currency: Currency(id: "", name: "", value: 220110.55398024683, image: "", percentage: 0))
             .previewLayout(.fixed(width: 400, height: 80))
     }
 }

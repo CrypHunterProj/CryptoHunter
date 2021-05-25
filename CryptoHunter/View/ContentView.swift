@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @State var selection = 0
 
+
+    let dashboardVM = DashboardViewModel(provider: WatchConnectionProvider())
+
     var body: some View {
         UITabBar.appearance().barTintColor = UIColor(named: "backgroundTabBar")
         UITabBar.appearance().unselectedItemTintColor = UIColor(named: "imageTabItemUnselected")
 
         return TabView(selection: $selection) {
-            Dashboard()
+            Dashboard(viewModel: dashboardVM)
                 .tabItem {
                     selection == 0 ? Image("dashboardHighlighted").renderingMode(.original) : Image("dashboard").renderingMode(.original)
 
