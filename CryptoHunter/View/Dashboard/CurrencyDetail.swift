@@ -32,7 +32,8 @@ struct CurrencyDetail: View {
                     }.padding(.leading, 4)
                     LineView(data: viewModel.getDataFor(coin: coin),
                              title: "BRL",
-                             legend: "Week")
+                             legend: "Week",
+                             style: Styles.barChartStyleNeonBlueDark)
                     Text("The chart shows the variation of the week for the choosen currency, the data is reloaded once per day.")
                         .padding(.horizontal, 4)
                         .padding(.top, 380)
