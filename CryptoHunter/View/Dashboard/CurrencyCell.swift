@@ -35,6 +35,7 @@ struct CurrencyCell: View {
                 VStack(alignment: .trailing, spacing: 5) {
                     Text("\(currency.value.currencyFormat)")
                         .font(.footnote)
+                        .bold()
                         .lineLimit(1)
                         .truncationMode(.middle)
                         .allowsTightening(true)
