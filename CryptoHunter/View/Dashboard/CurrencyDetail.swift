@@ -19,20 +19,27 @@ struct CurrencyDetail: View {
                 VStack(alignment: .leading) {
                     HStack {
                         getCurrencyDefaultImage(named: currency.id.lowercased())
+                            .resizable()
+                            .frame(width: 56, height: 56)
                         VStack(alignment: .leading) {
                             Text(currency.name)
-                                .font(.subheadline)
+                                .font(.title3)
                                 .foregroundColor(.secondary)
                             Text(currency.value.currencyFormat)
-                                .font(.headline)
+                                .font(.title2)
+                                .bold()
                         }
-                    }.padding(.leading, 16)
-                    LineChartView(data: viewModel.getDataFor(coin: coin),
-                                  title: coin.name,
-                                  form: ChartForm.large,
-                                  rateValue: Int(coin.percentChange24Hrs),
-                                  dropShadow: false)
-                        .padding(.top, 24)
+                    }.padding(.leading, 4)
+                    LineView(data: viewModel.getDataFor(coin: coin),
+                             title: "BRL",
+                             legend: "Week")
+                    Text("The chart shows the variation of the week for the choosen currency, the data is reloaded once per day.")
+                        .padding(.horizontal, 4)
+                        .padding(.top, 380)
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+
                 }
             }
     }
