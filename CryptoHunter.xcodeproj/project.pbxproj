@@ -21,6 +21,7 @@
 		18C710D126547DDB0082C6EA /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBF10F264F16760053CD43 /* InformationView.swift */; };
 		18C710D3265550F40082C6EA /* CoinMarketCapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710D2265550F40082C6EA /* CoinMarketCapRouter.swift */; };
 		18C710D5265571170082C6EA /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710D4265571170082C6EA /* NumberFormatter.swift */; };
+		18EF4367265D1DA200F9B903 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF4366265D1DA200F9B903 /* Mocks.swift */; };
 		18F80F7E26569C1A00F42D86 /* TestMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F7D26569C1A00F42D86 /* TestMockData.swift */; };
 		18F80F8026569C7900F42D86 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F7F26569C7900F42D86 /* MockURLSessionDataTask.swift */; };
 		18F80F8226569CD000F42D86 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F8126569CD000F42D86 /* MockURLSession.swift */; };
@@ -142,6 +143,7 @@
 		18C710CF26547C2B0082C6EA /* InformationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationService.swift; sourceTree = "<group>"; };
 		18C710D2265550F40082C6EA /* CoinMarketCapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapRouter.swift; sourceTree = "<group>"; };
 		18C710D4265571170082C6EA /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		18EF4366265D1DA200F9B903 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		18F80F7D26569C1A00F42D86 /* TestMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMockData.swift; sourceTree = "<group>"; };
 		18F80F7F26569C7900F42D86 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		18F80F8126569CD000F42D86 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				18F80F7D26569C1A00F42D86 /* TestMockData.swift */,
+				18EF4366265D1DA200F9B903 /* Mocks.swift */,
 				18F80F7F26569C7900F42D86 /* MockURLSessionDataTask.swift */,
 				18F80F8126569CD000F42D86 /* MockURLSession.swift */,
 			);
@@ -779,6 +782,7 @@
 				18F80F8026569C7900F42D86 /* MockURLSessionDataTask.swift in Sources */,
 				50971E85264BFA88000223C0 /* CryptoHunterTests.swift in Sources */,
 				18F80F7E26569C1A00F42D86 /* TestMockData.swift in Sources */,
+				18EF4367265D1DA200F9B903 /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
