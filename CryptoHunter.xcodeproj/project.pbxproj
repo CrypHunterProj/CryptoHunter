@@ -22,9 +22,9 @@
 		18C710D3265550F40082C6EA /* CoinMarketCapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710D2265550F40082C6EA /* CoinMarketCapRouter.swift */; };
 		18C710D5265571170082C6EA /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710D4265571170082C6EA /* NumberFormatter.swift */; };
 		18EF4367265D1DA200F9B903 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF4366265D1DA200F9B903 /* Mocks.swift */; };
+		18EF4369265D4BFB00F9B903 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F7F26569C7900F42D86 /* MockURLSessionDataTask.swift */; };
+		18EF436A265D4BFE00F9B903 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F8126569CD000F42D86 /* MockURLSession.swift */; };
 		18F80F7E26569C1A00F42D86 /* TestMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F7D26569C1A00F42D86 /* TestMockData.swift */; };
-		18F80F8026569C7900F42D86 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F7F26569C7900F42D86 /* MockURLSessionDataTask.swift */; };
-		18F80F8226569CD000F42D86 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F8126569CD000F42D86 /* MockURLSession.swift */; };
 		507150ED264D4E00002E62AD /* DashboardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150EC264D4E00002E62AD /* DashboardHeader.swift */; };
 		507150EF264D6F6C002E62AD /* CurrencyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150EE264D6F6C002E62AD /* CurrencyDetail.swift */; };
 		507150F1264D6F8C002E62AD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F0264D6F8C002E62AD /* CurrencyCell.swift */; };
@@ -778,10 +778,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F80F8226569CD000F42D86 /* MockURLSession.swift in Sources */,
-				18F80F8026569C7900F42D86 /* MockURLSessionDataTask.swift in Sources */,
 				50971E85264BFA88000223C0 /* CryptoHunterTests.swift in Sources */,
+				18EF4369265D4BFB00F9B903 /* MockURLSessionDataTask.swift in Sources */,
 				18F80F7E26569C1A00F42D86 /* TestMockData.swift in Sources */,
+				18EF436A265D4BFE00F9B903 /* MockURLSession.swift in Sources */,
 				18EF4367265D1DA200F9B903 /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

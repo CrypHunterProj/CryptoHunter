@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct CurrencyList: View {
-    @State var items: [Currency]
+
+    @ObservedObject var viewModel: DashboardViewModel
+    var items: [Currency] {
+        viewModel.currency
+    }
 
     var body: some View {
         ZStack {
             ScrollView(showsIndicators: false) {
                 ForEach(items, id: \.self) { item in
-                    NavigationLink(destination: CurrencyDetail(currency: item)) {
+                    NavigationLink(destination:
+                        CurrencyDetail(viewModel: viewModel,
+                                       currency: item,
+                                       coin: viewModel.criptoCoins[items.firstIndex(of: item) ?? 0])) {
                         CurrencyCell(currency: item)
                             .frame(height: 80)
                     }
@@ -27,25 +34,11 @@ struct CurrencyList: View {
                                 .padding(.bottom, -300))
             }
         }
-//        .onAppear {
-//            CurrencyService.gettingCryptocoins { cryptoCoins in
-//                let currencies = cryptoCoins.map { cryptoCoin in
-//                    Currency(
-//                        id: cryptoCoin.symbol,
-//                        name: cryptoCoin.name,
-//                         value: Double( Int( cryptoCoin.quote.BRL!.market_cap! * 100 ) ) / 100,
-//                        image: "",
-//                        percentage: Int(cryptoCoin.quote.BRL!.percent_change_24h ?? 0)
-//                    )
-//                }
-//                self.items = currencies
-//            }
-//        }
     }
 }
 
-//struct CurrencyList_Previews: PreviewProvider {
+// struct CurrencyList_Previews: PreviewProvider {
 //    static var previews: some View {
 //        CurrencyList()
 //    }
-//}
+// }

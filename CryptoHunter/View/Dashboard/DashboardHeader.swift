@@ -38,9 +38,9 @@ struct DashboardHeader: View {
     }
 }
 
-//struct DashboardHeader_Previews: PreviewProvider {
+// struct DashboardHeader_Previews: PreviewProvider {
 //    static var previews: some View {
 //        DashboardHeader()
 //            .previewLayout(.fixed(width: 400, height: 300))
 //    }
-//}
+// }
