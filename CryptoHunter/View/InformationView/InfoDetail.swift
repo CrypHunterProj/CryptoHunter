@@ -20,7 +20,7 @@ struct InfoDetail: View {
             HStack {
                 Spacer().padding()
 
-                Image(name) 
+                Image(name)
                     .scaleEffect(2.3)
                     .padding(.top, -20)
                     .padding([.trailing, .bottom], 40)

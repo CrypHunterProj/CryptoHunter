@@ -13,20 +13,20 @@ struct CurrencyService {
     /// - Parameters:
     ///     - completion: Retorna o array de CryptoCoin em uma closure
     ///     - cryptoCoinArray: Array contendo as informações das criptomoedas
-    static func gettingCryptocoins(completion: @escaping (_ cryptoCoinArray: [CryptoCoin]) -> Void) {
+    static func gettingCryptocoins(session: URLSession = URLSession.shared, completion: @escaping (_ cryptoCoinArray: [CryptoCoin]) -> Void) {
         if hasPersistedCryptocoinsForToday() {
             let readDocumentsURL = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
             let readFileURL = readDocumentsURL.appendingPathComponent(gettingListingFilename())
             do {
                 let data = try Data(contentsOf: readFileURL)
                 let cryptoData = try JSONDecoder().decode(CryptoData.self, from: data)
-                completion(cryptoData.data)
+                completion(cryptoData.data)  // testar quando le o json do readFileURl
             } catch {
                 print(error)
                 completion([])
             }
         } else {
-            request { result in
+            request(session: session) { result in
                 switch result {
                 case .success(let cryptocoin):
                     completion(cryptocoin)
