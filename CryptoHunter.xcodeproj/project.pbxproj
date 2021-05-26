@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D4D5D265E7AA800C1C29C /* InfoServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4D5C265E7AA800C1C29C /* InfoServices.swift */; };
 		188385E126529F78003ACB1C /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188385E026529F78003ACB1C /* CryptoData.swift */; };
 		18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A50264D7D2F00F967F2 /* InfoCardModel.swift */; };
 		18A33A53264D85BF00F967F2 /* InfoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33A52264D85BF00F967F2 /* InfoDetail.swift */; };
@@ -129,6 +130,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180D4D5C265E7AA800C1C29C /* InfoServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoServices.swift; path = CryptoHunterTests/InfoServices.swift; sourceTree = SOURCE_ROOT; };
 		188385E026529F78003ACB1C /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 		18A33A50264D7D2F00F967F2 /* InfoCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardModel.swift; sourceTree = "<group>"; };
 		18A33A52264D85BF00F967F2 /* InfoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetail.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				18EF4366265D1DA200F9B903 /* Mocks.swift */,
 				18F80F7F26569C7900F42D86 /* MockURLSessionDataTask.swift */,
 				18F80F8126569CD000F42D86 /* MockURLSession.swift */,
+				180D4D5C265E7AA800C1C29C /* InfoServices.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -779,6 +782,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50971E85264BFA88000223C0 /* CryptoHunterTests.swift in Sources */,
+				180D4D5D265E7AA800C1C29C /* InfoServices.swift in Sources */,
 				18EF4369265D4BFB00F9B903 /* MockURLSessionDataTask.swift in Sources */,
 				18F80F7E26569C1A00F42D86 /* TestMockData.swift in Sources */,
 				18EF436A265D4BFE00F9B903 /* MockURLSession.swift in Sources */,
