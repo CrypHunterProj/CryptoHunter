@@ -122,7 +122,7 @@ class CryptoHunterTests: XCTestCase {
             case .success(let cryptocoinArray):
                 XCTAssertEqual(cryptocoinArray, cryptoDataMock.data)
                 expect.fulfill()
-            case .failure(_):
+            case .failure:
                 break
             }
         }
@@ -134,7 +134,7 @@ class CryptoHunterTests: XCTestCase {
 
         // given
         let dataMock = "Not JSON".data(using: .utf8)
-        //swiftlint:disable line_length
+        // swiftlint:disable line_length
         let expectedErrorDescription = "dataCorrupted(Swift.DecodingError.Context(codingPath: [], debugDescription: \"The given data was not valid JSON.\", underlyingError: Optional(Error Domain=NSCocoaErrorDomain Code=3840 \"Invalid value around character 0.\" UserInfo={NSDebugDescription=Invalid value around character 0.})))"
 
         // when
@@ -153,7 +153,7 @@ class CryptoHunterTests: XCTestCase {
                     CurrencyServiceError.decodeError(errorDescription: expectedErrorDescription)
                 )
                 expect.fulfill()
-            case .success(_):
+            case .success:
                 break
             }
         }

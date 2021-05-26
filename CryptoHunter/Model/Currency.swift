@@ -13,4 +13,5 @@ struct Currency: Codable, Hashable {
     let value: Double
     let image: String
     let percentage: Int
+    let isFavorite: Bool
 }

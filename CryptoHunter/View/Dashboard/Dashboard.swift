@@ -24,17 +24,19 @@ struct Dashboard: View {
                 print("Click")
             }, label: {
                 Image(systemName: "slider.horizontal.3")
-            }))
+            })).onAppear(perform: {
+                viewModel.sendDataToWatch()
+            })
+                }
+            }
         }
-        }
-    }
     }
 }
 
-//struct Dashboard_Previews: PreviewProvider {
+// struct Dashboard_Previews: PreviewProvider {
 //    static var previews: some View {
 //        Dashboard()
 //            .preferredColorScheme(.dark)
 //            .previewDevice("iPhone 11")ß
 //    }
-//}
+// }

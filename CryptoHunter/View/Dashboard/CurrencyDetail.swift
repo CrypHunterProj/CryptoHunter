@@ -21,6 +21,6 @@ struct CurrencyDetail: View {
 
 struct CurrencyDetail_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyDetail(currency: Currency(id: "", name: "", value: 2000, image: "", percentage: 0))
+        CurrencyDetail(currency: Currency(id: "", name: "", value: 2000, image: "", percentage: 0, isFavorite: false))
     }
 }

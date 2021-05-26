@@ -91,4 +91,10 @@ struct CurrencyService {
         let dateListeningCurrency: String = "\(dateComponents.day!)-\(dateComponents.month!)-\(dateComponents.year!)_ListingsCryptocurrency.json"
         return dateListeningCurrency
     }
+
+    static func getURL() -> URL {
+        let readDocumentsURL = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
+        let readFileURL = readDocumentsURL.appendingPathComponent(gettingListingFilename())
+        return readFileURL
+    }
 }

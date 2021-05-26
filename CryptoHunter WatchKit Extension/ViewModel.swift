@@ -8,32 +8,40 @@
 import SwiftUI
 import WatchConnectivity
 
-class ViewModel: ObservableObject {
+class ViewModel: NSObject, ObservableObject, WCSessionDelegate {
 
-    var connectionProvider: IphoneConnectionProvider
+    @Published var response: MessageHandle!
+    @Published var state = State.start
 
-    @Published var message = ""
+    let session: WCSession
 
-    init(_ iPhoneConnectionProvider: IphoneConnectionProvider) {
-        self.connectionProvider = iPhoneConnectionProvider
+    init(session: WCSession = .default) {
+        self.session = session
+        super.init()
+        self.session.delegate = self
+        self.connect()
     }
+
+    func connect() {
+        guard WCSession.isSupported() else {
+            return
+        }
+        self.session.activate()
+    }
+
 }
 
 extension ViewModel {
+
+    enum State {case start, loading, error, done}
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
 
     }
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         DispatchQueue.main.async {
-            self.message = message["message"] as? String ?? "Unknown"
+            self.response = MessageHandle(message: message)
+            self.state = .done
         }
     }
-
-    func session(_ session: WCSession, didReceiveMessageData messageData: Data, replyHandler: @escaping (Data) -> Void) {
-        DispatchQueue.main.async {
-
-        }
-    }
-
 }

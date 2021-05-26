@@ -11,8 +11,8 @@ import WatchConnectivity
 class DashboardViewModel: ObservableObject {
 
     var provider: WatchConnectionProvider
-    @Published var criptoCoins: [CryptoCoin] = []
-    @Published var currency: [Currency] = []
+    var criptoCoins: [CryptoCoin] = []
+   var currency: [Currency] = []
     @Published private(set) var dashboardState = State.loading
 
     init(provider: WatchConnectionProvider) {
@@ -25,7 +25,9 @@ extension DashboardViewModel {
 
     enum State {case loading, error, done}
 
-    func sendFileToWatch() {
+    func sendDataToWatch() {
+        let dataToSend = prepareToSend()
+        provider.send(message: dataToSend)
     }
 
     func getAll() {
@@ -78,7 +80,23 @@ extension DashboardViewModel {
 
     func getCurrencyFromCoin() {
         self.criptoCoins.forEach {
-            self.currency.append(Currency.init(id: $0.symbol, name: $0.name, value: ($0.priceBRL), image: "AppIcon", percentage: Int($0.percentChange24Hrs)))
+            self.currency.append(Currency.init(id: $0.symbol, name: $0.name, value: ($0.priceBRL), image: "AppIcon", percentage: Int($0.percentChange24Hrs), isFavorite: false))
         }
+    }
+
+    func prepareToSend() -> [String: Any] {
+        var siglas: [String] = []
+        var percent: [Int] = []
+        var data: [Double] = []
+        var value: [Double] = []
+
+        for i in 0...2 {
+            siglas.append(self.getSymbolForIndex(i))
+            percent.append(self.getPercentForIndex(i))
+            data.append(contentsOf: self.getDataForIndex(i))
+            value.append(self.currency[i].value)
+        }
+        let object: [String: Any] = ["Siglas": siglas, "Percent": percent, "Data": data, "Value": value]
+        return object
     }
 }
