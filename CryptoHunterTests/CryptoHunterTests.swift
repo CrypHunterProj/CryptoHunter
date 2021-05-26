@@ -122,7 +122,7 @@ class CryptoHunterTests: XCTestCase {
             case .success(let cryptocoinArray):
                 XCTAssertEqual(cryptocoinArray, cryptoDataMock.data)
                 expect.fulfill()
-            case .failure(_):
+            case .failure:
                 break
             }
         }
@@ -153,7 +153,7 @@ class CryptoHunterTests: XCTestCase {
                     CurrencyServiceError.decodeError(errorDescription: expectedErrorDescription)
                 )
                 expect.fulfill()
-            case .success(_):
+            case .success:
                 break
             }
         }
