@@ -31,6 +31,7 @@
 		507150FA2653EB6B002E62AD /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F92653EB6B002E62AD /* AsyncImage.swift */; };
 		50715100265E73A8002E62AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507150FF265E73A8002E62AD /* Launch Screen.storyboard */; };
 		50715103265E82C8002E62AD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 50715102265E82C8002E62AD /* SwiftUICharts */; };
+		50715105265E83A3002E62AD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 50715104265E83A3002E62AD /* SwiftUICharts */; };
 		50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E72264BFA86000223C0 /* CryptoHunterApp.swift */; };
 		50971E77264BFA88000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E76264BFA88000223C0 /* Assets.xcassets */; };
 		50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E79264BFA88000223C0 /* Preview Assets.xcassets */; };
@@ -217,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50715105265E83A3002E62AD /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +559,7 @@
 			);
 			name = "CryptoHunter WatchKit Extension";
 			packageProductDependencies = (
+				50715104265E83A3002E62AD /* SwiftUICharts */,
 			);
 			productName = "CryptoHunter WatchKit Extension";
 			productReference = 50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */;
@@ -1413,6 +1416,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		50715102265E82C8002E62AD /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50715101265E82C8002E62AD /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		50715104265E83A3002E62AD /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 50715101265E82C8002E62AD /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
