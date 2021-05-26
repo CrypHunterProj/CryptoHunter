@@ -53,6 +53,7 @@
 		50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF2264BFB31000223C0 /* AppFonts.swift */; };
 		50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF6264BFB32000223C0 /* DashboardViewModel.swift */; };
 		50971F02264BFB32000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFA264BFB32000223C0 /* ContentView.swift */; };
+		570EDEB0265E8BD300831000 /* ChartStyleReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */; };
 		ECB331E226554DA2004FEEAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB331E126554DA2004FEEAB /* ViewModel.swift */; };
 		ECB3320A26555440004FEEAB /* iPhoneConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */; };
 		ECE6E96026568504007527E4 /* WatchConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */; };
@@ -186,6 +187,7 @@
 		50971EF2264BFB31000223C0 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		50971EF6264BFB32000223C0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		50971EFA264BFB32000223C0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartStyleReusable.swift; sourceTree = "<group>"; };
 		ECB331E126554DA2004FEEAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneConnectionProvider.swift; sourceTree = "<group>"; };
 		ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectionProvider.swift; sourceTree = "<group>"; };
@@ -450,12 +452,21 @@
 		50971EF7264BFB32000223C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				570EDEAE265E8BB700831000 /* Reusable */,
 				507150F4264D70EC002E62AD /* Dashboard */,
 				50971E72264BFA86000223C0 /* CryptoHunterApp.swift */,
 				50971EFA264BFB32000223C0 /* ContentView.swift */,
 				18A33A56264D863600F967F2 /* InformationView */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		570EDEAE265E8BB700831000 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		ECB3318A26553886004FEEAB /* Frameworks */ = {
@@ -758,6 +769,7 @@
 				18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */,
 				18C710D3265550F40082C6EA /* CoinMarketCapRouter.swift in Sources */,
 				50971EFC264BFB32000223C0 /* Currency.swift in Sources */,
+				570EDEB0265E8BD300831000 /* ChartStyleReusable.swift in Sources */,
 				18BBF10A264EB6230053CD43 /* Information.swift in Sources */,
 				50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */,
 				50971F02264BFB32000223C0 /* ContentView.swift in Sources */,

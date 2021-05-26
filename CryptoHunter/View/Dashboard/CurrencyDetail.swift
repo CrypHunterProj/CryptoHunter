@@ -32,7 +32,7 @@ struct CurrencyDetail: View {
                     LineView(data: viewModel.getDataFor(coin: coin),
                              title: "BRL",
                              legend: "Week",
-                             style: Styles.barChartStyleNeonBlueDark)
+                             style: ChartStyleReusable.previewChartStyle(up: currency.percentage > 0, type: ""))
                     Text("The chart shows the variation of the week for the choosen currency, the data is reloaded once per day.")
                         .padding(.horizontal, 4)
                         .padding(.top, 380)
