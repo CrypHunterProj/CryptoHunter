@@ -13,7 +13,7 @@ struct CurrencyCell: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16)
-                .fill(Color(.sRGB, red: 4/255, green: 20/255, blue: 25/255, opacity: 1))
+                .fill(Color("backgroundCell"))
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal, 24)
                 .padding(.vertical, 4)
@@ -35,6 +35,7 @@ struct CurrencyCell: View {
                 VStack(alignment: .trailing, spacing: 5) {
                     Text("\(currency.value.currencyFormat)")
                         .font(.footnote)
+                        .bold()
                         .lineLimit(1)
                         .truncationMode(.middle)
                         .allowsTightening(true)

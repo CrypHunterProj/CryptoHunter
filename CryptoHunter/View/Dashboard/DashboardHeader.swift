@@ -16,16 +16,19 @@ struct DashboardHeader: View {
             HStack {
                 LineChartView(data: viewModel.getDataForIndex(0),
                               title: viewModel.getSymbolForIndex(0),
+                              style: ChartStyleReusable.previewChartStyle(up: viewModel.getPercentForIndex(0) > 0, type: "Card"),
                               form: CGSize(width: 120, height: 100),
                               rateValue: viewModel.getPercentForIndex(0),
                               dropShadow: false)
                 LineChartView(data: viewModel.getDataForIndex(1),
                               title: viewModel.getSymbolForIndex(1),
+                              style: ChartStyleReusable.previewChartStyle(up: viewModel.getPercentForIndex(1) > 0, type: "Card"),
                               form: CGSize(width: 120, height: 100),
                               rateValue: viewModel.getPercentForIndex(1),
                               dropShadow: false)
                 LineChartView(data: viewModel.getDataForIndex(2),
                               title: viewModel.getSymbolForIndex(2),
+                              style: ChartStyleReusable.previewChartStyle(up: viewModel.getPercentForIndex(2) > 0, type: "Card"),
                               form: CGSize(width: 120, height: 100),
                               rateValue: viewModel.getPercentForIndex(2),
                               dropShadow: false)

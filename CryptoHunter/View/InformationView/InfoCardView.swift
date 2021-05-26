@@ -21,7 +21,7 @@ struct InfoCardView: View {
 
         }
         .frame(maxWidth: 400, minHeight: 90)
-        .background(Color.blue)
+        .background(Color("backgroundCell"))
         .cornerRadius(20)
         .shadow(radius: 5)
         .padding()

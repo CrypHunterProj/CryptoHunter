@@ -43,6 +43,12 @@ struct InformationView: View {
                 })
             }
             .navigationTitle("Informações")
+            .background(LinearGradient(gradient:
+                                        Gradient(colors:
+                                                    [Color("backgroundStart"), Color("backgroundEnd")]
+            ),
+                                 startPoint: .topLeading,
+                                 endPoint: .bottomTrailing).ignoresSafeArea())
         }
     }
 }

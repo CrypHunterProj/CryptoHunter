@@ -30,6 +30,9 @@
 		507150F1264D6F8C002E62AD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F0264D6F8C002E62AD /* CurrencyCell.swift */; };
 		507150F3264D70D9002E62AD /* CurrencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F2264D70D9002E62AD /* CurrencyList.swift */; };
 		507150FA2653EB6B002E62AD /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507150F92653EB6B002E62AD /* AsyncImage.swift */; };
+		50715100265E73A8002E62AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507150FF265E73A8002E62AD /* Launch Screen.storyboard */; };
+		50715103265E82C8002E62AD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 50715102265E82C8002E62AD /* SwiftUICharts */; };
+		50715105265E83A3002E62AD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 50715104265E83A3002E62AD /* SwiftUICharts */; };
 		50971E73264BFA86000223C0 /* CryptoHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E72264BFA86000223C0 /* CryptoHunterApp.swift */; };
 		50971E77264BFA88000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E76264BFA88000223C0 /* Assets.xcassets */; };
 		50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E79264BFA88000223C0 /* Preview Assets.xcassets */; };
@@ -51,8 +54,7 @@
 		50971EFD264BFB32000223C0 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF2264BFB31000223C0 /* AppFonts.swift */; };
 		50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF6264BFB32000223C0 /* DashboardViewModel.swift */; };
 		50971F02264BFB32000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFA264BFB32000223C0 /* ContentView.swift */; };
-		ECB331AB26553ADA004FEEAB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECB331AA26553ADA004FEEAB /* SwiftUICharts */; };
-		ECB331C226553B27004FEEAB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECB331C126553B27004FEEAB /* SwiftUICharts */; };
+		570EDEB0265E8BD300831000 /* ChartStyleReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */; };
 		ECB331E226554DA2004FEEAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB331E126554DA2004FEEAB /* ViewModel.swift */; };
 		ECB3320A26555440004FEEAB /* iPhoneConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */; };
 		ECE6E96026568504007527E4 /* WatchConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */; };
@@ -152,6 +154,7 @@
 		507150F0264D6F8C002E62AD /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		507150F2264D70D9002E62AD /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
 		507150F92653EB6B002E62AD /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		507150FF265E73A8002E62AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		50971E6F264BFA86000223C0 /* CryptoHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50971E72264BFA86000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
 		50971E76264BFA88000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 		50971EF2264BFB31000223C0 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		50971EF6264BFB32000223C0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		50971EFA264BFB32000223C0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartStyleReusable.swift; sourceTree = "<group>"; };
 		ECB331E126554DA2004FEEAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneConnectionProvider.swift; sourceTree = "<group>"; };
 		ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectionProvider.swift; sourceTree = "<group>"; };
@@ -196,7 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB331AB26553ADA004FEEAB /* SwiftUICharts in Frameworks */,
+				50715103265E82C8002E62AD /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB331C226553B27004FEEAB /* SwiftUICharts in Frameworks */,
+				50715105265E83A3002E62AD /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +328,7 @@
 				50971E76264BFA88000223C0 /* Assets.xcassets */,
 				50971E7B264BFA88000223C0 /* Info.plist */,
 				50971E78264BFA88000223C0 /* Preview Content */,
+				507150FF265E73A8002E62AD /* Launch Screen.storyboard */,
 			);
 			path = CryptoHunter;
 			sourceTree = "<group>";
@@ -450,12 +455,21 @@
 		50971EF7264BFB32000223C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				570EDEAE265E8BB700831000 /* Reusable */,
 				507150F4264D70EC002E62AD /* Dashboard */,
 				50971E72264BFA86000223C0 /* CryptoHunterApp.swift */,
 				50971EFA264BFB32000223C0 /* ContentView.swift */,
 				18A33A56264D863600F967F2 /* InformationView */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		570EDEAE265E8BB700831000 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		ECB3318A26553886004FEEAB /* Frameworks */ = {
@@ -485,7 +499,7 @@
 			);
 			name = CryptoHunter;
 			packageProductDependencies = (
-				ECB331AA26553ADA004FEEAB /* SwiftUICharts */,
+				50715102265E82C8002E62AD /* SwiftUICharts */,
 			);
 			productName = CryptoHunter;
 			productReference = 50971E6F264BFA86000223C0 /* CryptoHunter.app */;
@@ -559,7 +573,7 @@
 			);
 			name = "CryptoHunter WatchKit Extension";
 			packageProductDependencies = (
-				ECB331C126553B27004FEEAB /* SwiftUICharts */,
+				50715104265E83A3002E62AD /* SwiftUICharts */,
 			);
 			productName = "CryptoHunter WatchKit Extension";
 			productReference = 50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */;
@@ -647,7 +661,7 @@
 			);
 			mainGroup = 50971E66264BFA86000223C0;
 			packageReferences = (
-				ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */,
+				50715101265E82C8002E62AD /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 50971E70264BFA86000223C0 /* Products */;
 			projectDirPath = "";
@@ -672,6 +686,7 @@
 				50971E7A264BFA88000223C0 /* Preview Assets.xcassets in Resources */,
 				18C710CA265352430082C6EA /* Coinmarketcap.json in Resources */,
 				18BBF10C264EBB790053CD43 /* Informacoes.json in Resources */,
+				50715100265E73A8002E62AD /* Launch Screen.storyboard in Resources */,
 				50971E77264BFA88000223C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -757,6 +772,7 @@
 				18A33A51264D7D2F00F967F2 /* InfoCardModel.swift in Sources */,
 				18C710D3265550F40082C6EA /* CoinMarketCapRouter.swift in Sources */,
 				50971EFC264BFB32000223C0 /* Currency.swift in Sources */,
+				570EDEB0265E8BD300831000 /* ChartStyleReusable.swift in Sources */,
 				18BBF10A264EB6230053CD43 /* Information.swift in Sources */,
 				50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */,
 				50971F02264BFB32000223C0 /* ContentView.swift in Sources */,
@@ -1396,6 +1412,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		50715101265E82C8002E62AD /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CrypHunterProj/ChartView";
+			requirement = {
+				kind = revision;
+				revision = 7fe65267ef9f22ba0dd352442c2025a05cbf1393;
+			};
+		};
 		ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CrypHunterProj/ChartView.git";
@@ -1407,14 +1431,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ECB331AA26553ADA004FEEAB /* SwiftUICharts */ = {
+		50715102265E82C8002E62AD /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = 50715101265E82C8002E62AD /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
-		ECB331C126553B27004FEEAB /* SwiftUICharts */ = {
+		50715104265E83A3002E62AD /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ECB331A926553AD9004FEEAB /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = 50715101265E82C8002E62AD /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 		ECB331CA26553B3D004FEEAB /* SwiftUICharts */ = {

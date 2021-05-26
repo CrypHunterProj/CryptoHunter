@@ -24,7 +24,6 @@ struct CurrencyDetail: View {
                         VStack(alignment: .leading) {
                             Text(currency.name)
                                 .font(.title3)
-                                .foregroundColor(.secondary)
                             Text(currency.value.currencyFormat)
                                 .font(.title2)
                                 .bold()
@@ -33,16 +32,20 @@ struct CurrencyDetail: View {
                     LineView(data: viewModel.getDataFor(coin: coin),
                              title: "BRL",
                              legend: "Week",
-                             style: Styles.barChartStyleNeonBlueDark)
+                             style: ChartStyleReusable.previewChartStyle(up: currency.percentage > 0, type: ""))
                     Text("The chart shows the variation of the week for the choosen currency, the data is reloaded once per day.")
                         .padding(.horizontal, 4)
                         .padding(.top, 380)
                         .font(.footnote)
-                        .foregroundColor(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
 
                 }
-            }
+            }.background(LinearGradient(gradient:
+                                            Gradient(colors:
+                                                        [Color("backgroundStart"), Color("backgroundEnd")]
+                ),
+                                     startPoint: .topLeading,
+                                     endPoint: .bottomTrailing).ignoresSafeArea())
     }
 
     func getCurrencyDefaultImage(named: String) -> Image {

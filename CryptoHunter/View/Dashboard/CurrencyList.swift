@@ -28,7 +28,8 @@ struct CurrencyList: View {
                 }
                 .padding(.vertical, 24)
                 .background(RoundedRectangle(cornerRadius: 24)
-                                .fill(LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 10/255, green: 40/255, blue: 64/255, opacity: 1), Color.black]),
+                                .fill(LinearGradient(gradient: Gradient(colors: [Color("backgroundStart"), Color("backgroundEnd")]
+                                ),
                                                      startPoint: .topLeading,
                                                      endPoint: .bottomTrailing))
                                 .padding(.bottom, -300))
