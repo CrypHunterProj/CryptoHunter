@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CryptoHunterApp: App {
 
-    let viewModel = ViewModel(IphoneConnectionProvider())
+    let viewModel = ViewModel()
 
     @SceneBuilder var body: some Scene {
         WindowGroup {

@@ -24,6 +24,7 @@ class WatchConnectionProvider: NSObject, WCSessionDelegate {
             print(error.localizedDescription)
         }
     }
+
     func connect() {
         guard WCSession.isSupported() else {
             return

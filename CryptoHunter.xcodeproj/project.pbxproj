@@ -40,7 +40,6 @@
 		50971E85264BFA88000223C0 /* CryptoHunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E84264BFA88000223C0 /* CryptoHunterTests.swift */; };
 		50971E90264BFA88000223C0 /* CryptoHunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971E8F264BFA88000223C0 /* CryptoHunterUITests.swift */; };
 		50971E95264BFA88000223C0 /* CryptoHunter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50971E94264BFA88000223C0 /* CryptoHunter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		50971E9A264BFA89000223C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50971E99264BFA89000223C0 /* Assets.xcassets */; };
 		50971EA1264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		50971EA6264BFA89000223C0 /* CryptoHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EA5264BFA89000223C0 /* CryptoHunterApp.swift */; };
 		50971EA8264BFA89000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EA7264BFA89000223C0 /* ContentView.swift */; };
@@ -56,8 +55,12 @@
 		50971EFF264BFB32000223C0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EF6264BFB32000223C0 /* DashboardViewModel.swift */; };
 		50971F02264BFB32000223C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50971EFA264BFB32000223C0 /* ContentView.swift */; };
 		570EDEB0265E8BD300831000 /* ChartStyleReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */; };
+		EC9CFF57265D370E0083C540 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C710D4265571170082C6EA /* NumberFormatter.swift */; };
+		EC9CFF60265D3A9F0083C540 /* GraphsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CFF5F265D3A9F0083C540 /* GraphsList.swift */; };
 		ECB331E226554DA2004FEEAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB331E126554DA2004FEEAB /* ViewModel.swift */; };
-		ECB3320A26555440004FEEAB /* iPhoneConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */; };
+		ECB3320A26555440004FEEAB /* MessageHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3320926555440004FEEAB /* MessageHandle.swift */; };
+		ECDD2D45265E7F29008157B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDD2D44265E7F29008157B7 /* Assets.xcassets */; };
+		ECDD2D5E265E8440008157B7 /* ChargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD2D5D265E8440008157B7 /* ChargeView.swift */; };
 		ECE6E96026568504007527E4 /* WatchConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -169,7 +172,6 @@
 		50971E8F264BFA88000223C0 /* CryptoHunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterUITests.swift; sourceTree = "<group>"; };
 		50971E91264BFA88000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50971E94264BFA88000223C0 /* CryptoHunter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoHunter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50971E99264BFA89000223C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50971E9B264BFA89000223C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50971EA0264BFA89000223C0 /* CryptoHunter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CryptoHunter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50971EA5264BFA89000223C0 /* CryptoHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHunterApp.swift; sourceTree = "<group>"; };
@@ -192,8 +194,11 @@
 		50971EF6264BFB32000223C0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		50971EFA264BFB32000223C0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		570EDEAF265E8BD300831000 /* ChartStyleReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartStyleReusable.swift; sourceTree = "<group>"; };
+		EC9CFF5F265D3A9F0083C540 /* GraphsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsList.swift; sourceTree = "<group>"; };
 		ECB331E126554DA2004FEEAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneConnectionProvider.swift; sourceTree = "<group>"; };
+		ECB3320926555440004FEEAB /* MessageHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHandle.swift; sourceTree = "<group>"; };
+		ECDD2D44265E7F29008157B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECDD2D5D265E8440008157B7 /* ChargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeView.swift; sourceTree = "<group>"; };
 		ECE6E95F26568504007527E4 /* WatchConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectionProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -366,7 +371,7 @@
 		50971E98264BFA88000223C0 /* CryptoHunter WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				50971E99264BFA89000223C0 /* Assets.xcassets */,
+				ECDD2D44265E7F29008157B7 /* Assets.xcassets */,
 				50971E9B264BFA89000223C0 /* Info.plist */,
 			);
 			path = "CryptoHunter WatchKit App";
@@ -375,8 +380,10 @@
 		50971EA4264BFA89000223C0 /* CryptoHunter WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ECB3320926555440004FEEAB /* iPhoneConnectionProvider.swift */,
+				ECB3320926555440004FEEAB /* MessageHandle.swift */,
 				ECB331E126554DA2004FEEAB /* ViewModel.swift */,
+				EC9CFF5F265D3A9F0083C540 /* GraphsList.swift */,
+				ECDD2D5D265E8440008157B7 /* ChargeView.swift */,
 				50971EA5264BFA89000223C0 /* CryptoHunterApp.swift */,
 				50971EA7264BFA89000223C0 /* ContentView.swift */,
 				50971EA9264BFA89000223C0 /* NotificationController.swift */,
@@ -712,7 +719,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50971E9A264BFA89000223C0 /* Assets.xcassets in Resources */,
+				ECDD2D45265E7F29008157B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,12 +825,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDD2D5E265E8440008157B7 /* ChargeView.swift in Sources */,
 				50971EAA264BFA89000223C0 /* NotificationController.swift in Sources */,
-				ECB3320A26555440004FEEAB /* iPhoneConnectionProvider.swift in Sources */,
+				ECB3320A26555440004FEEAB /* MessageHandle.swift in Sources */,
 				50971EA8264BFA89000223C0 /* ContentView.swift in Sources */,
 				50971EAE264BFA89000223C0 /* ComplicationController.swift in Sources */,
 				50971EA6264BFA89000223C0 /* CryptoHunterApp.swift in Sources */,
+				EC9CFF57265D370E0083C540 /* NumberFormatter.swift in Sources */,
 				ECB331E226554DA2004FEEAB /* ViewModel.swift in Sources */,
+				EC9CFF60265D3A9F0083C540 /* GraphsList.swift in Sources */,
 				50971EAC264BFA89000223C0 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1000,6 +1010,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26.5;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				ENABLE_PREVIEWS = YES;
@@ -1026,6 +1037,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26.5;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoHunter WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4X8K6Z86C3;
 				ENABLE_PREVIEWS = YES;

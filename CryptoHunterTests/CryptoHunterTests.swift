@@ -179,7 +179,7 @@ class CryptoHunterTests: XCTestCase {
 
         // when
         CurrencyService.gettingCryptocoins { cryptoCoinArray in
-            //then
+            // then
             XCTAssertEqual(mockedJSON.data, cryptoCoinArray)
             expect.fulfill()
         }
@@ -202,7 +202,7 @@ class CryptoHunterTests: XCTestCase {
         // when
         CurrencyService.gettingCryptocoins(session: mockSession) { cryptoCoinArray in
 
-            //then
+            // then
             XCTAssertEqual(cryptoCoinArray, self.cryptoDataMock.data)
             expect.fulfill()
         }
@@ -220,7 +220,7 @@ class CryptoHunterTests: XCTestCase {
         // when
         CurrencyService.gettingCryptocoins { cryptoCoinArray in
 
-            //then
+            // then
             XCTAssertEqual(cryptoCoinArray, [])
             expect.fulfill()
         }
