@@ -9,8 +9,6 @@ import Foundation
 
 struct CoinMarketCapRouter {
 
-    private init() { }
-
     static var urlRequest: URLRequest {
         var request = URLRequest(url: url)
         request.allHTTPHeaderFields = header

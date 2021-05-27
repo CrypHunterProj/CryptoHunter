@@ -16,20 +16,27 @@ struct Dashboard: View {
         NavigationView {
             VStack {
                 if viewModel.dashboardState == .done {
-                DashboardHeader(viewModel: viewModel).zIndex(1)
+                DashboardHeader(viewModel: viewModel)
+                    .zIndex(1)
+//                    .onAppear(perform: {
+//                        viewModel.sendDataToWatch()
+//
+//                    })
                 Spacer(minLength: 32)
-                    CurrencyList(items: viewModel.currency)
-            .navigationBarTitle("Dashboard", displayMode: .automatic)
-            .navigationBarItems(trailing: Button(action: {
+                CurrencyList(viewModel: viewModel)
+                        .navigationBarTitle("Dashboard", displayMode: .large)
+                    .navigationBarItems(trailing: Button(action: {
                 print("Click")
             }, label: {
-                Image(systemName: "slider.horizontal.3")
-            })).onAppear(perform: {
-                viewModel.sendDataToWatch()
-            })
+//                Image(systemName: "slider.horizontal.3")
+                Image(systemName: "applewatch")
+                    .onTapGesture {
+                        viewModel.sendDataToWatch()
+                    }
+            }))
                 }
             }
-        }
+        }.accentColor(.white)
     }
 }
 

@@ -9,10 +9,10 @@ import Foundation
 
 struct InformationService {
 
-    private func getJsonURL(filename: String) -> URL? {
+    func getJsonURL(filename: String) -> URL? {
         guard let path = Bundle.main.path(forResource: filename, ofType: "json") else {
-                                          return nil
-                                          }
+            return nil
+        }
         let url = URL(fileURLWithPath: path)
         return url
     }

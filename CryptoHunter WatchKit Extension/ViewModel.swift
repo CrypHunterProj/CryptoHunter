@@ -40,6 +40,7 @@ extension ViewModel {
     }
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         DispatchQueue.main.async {
+//            self.state = .loading
             self.response = MessageHandle(message: message)
             self.state = .done
         }
